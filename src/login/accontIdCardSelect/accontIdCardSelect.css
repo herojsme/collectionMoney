@@ -1,0 +1,179 @@
+page {
+    background-color: #f4f6f8;
+}
+
+.confirm_button,
+.confirm_button_disable {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    border-radius: 49rpx !important;
+    color: #fff !important;
+    font-size: 36rpx !important;
+    font-weight: 500rpx !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.confirm_button_disable {
+    opacity: 0.3;
+}
+
+.cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    border-radius: 49rpx !important;
+    color: #45464e !important;
+    font-size: 36rpx !important;
+    font-weight: 0 !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.small_confirm_button {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    color: #fff !important;
+    font-weight: 500rpx !important;
+}
+
+.small_cancle_button,
+.small_confirm_button {
+    border-radius: 40rpx !important;
+    font-size: 36rpx !important;
+    height: 80rpx !important;
+    margin: 0 auto;
+    width: 240rpx;
+}
+
+.small_cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    color: #45464e !important;
+    font-weight: 0 !important;
+}
+
+.placeholder_customer_input {
+    color: #c1c1c1;
+    font-family: PingFang SC;
+    font-size: 32rpx !important;
+    font-weight: 400;
+}
+
+page {
+    background-color: #fff;
+}
+
+.login_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_container .login_appNameBox {
+    color: #1f1b27;
+    display: flex;
+    font-size: 46rpx;
+    font-weight: 500;
+    margin-left: 48rpx;
+    margin-top: 51rpx;
+}
+
+.login_container .login_descBox {
+    color: #45464e;
+    font-size: 26rpx;
+    margin-left: 48rpx;
+    margin-top: 16rpx;
+}
+
+.login_container .classScrollBox {
+    display: flex;
+    margin-top: 40rpx;
+}
+
+.login_container .classScrollBox .loginAccontBox {
+    align-items: center;
+    background-color: #f4f6f8;
+    border-radius: 12px;
+    display: flex;
+    height: 134rpx;
+    justify-content: space-between;
+    margin: 24rpx 48rpx 0rpx;
+}
+
+.login_container .classScrollBox .loginAccontBox .leftContentBox {
+    align-items: center;
+    display: flex;
+    margin-left: 22rpx;
+}
+
+.login_container .classScrollBox .loginAccontBox .leftContentBox .class_acccont_box {
+    margin-left: 20rpx;
+}
+
+.login_container .classScrollBox .loginAccontBox .leftContentBox .class_acccont_box .title {
+    color: #1f1b27;
+    font-size: 30rpx;
+    font-weight: 500;
+}
+
+.login_container .classScrollBox .loginAccontBox .leftContentBox .class_acccont_box .desc {
+    color: #9292a0;
+    font-size: 26rpx;
+}
+
+.login_container .classScrollBox .loginAccontBox .leftContentBox .leftTextClass {
+    color: #3c3c3c;
+    margin-left: 20rpx;
+}
+
+.login_container .classScrollBox .loginAccontBox .rightStatusBox {
+    margin-right: 22rpx;
+}
+
+.login_container .classScrollBox .loginAccontBox .rightStatusBox .rightTextClass {
+    color: #666;
+    font-size: 30rpx;
+}
+
+.login_container .classScrollBox .loginAccontBox .rightStatusBox .right_icon {
+    height: 36rpx;
+    width: 36rpx;
+}
+
+.login_container .classScrollBox .loginUnAccontBox {
+    align-items: center;
+    background-color: #f4f6f8;
+    border-radius: 12px;
+    display: flex;
+    height: 134rpx;
+    margin: 24rpx 48rpx 0rpx;
+}
+
+.login_container .classScrollBox .loginUnAccontBox .content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20rpx;
+}
+
+.login_container .classScrollBox .loginUnAccontBox .content .class_acccont_box {
+    color: #ccc;
+    margin-left: 20rpx;
+}
+
+.login_container .login_btnBox {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    height: 220rpx;
+    margin-top: 46rpx;
+    width: 100%;
+}
+
+.login_container .login_btnBox .loginBindBtn {
+    display: flex;
+    height: 170rpx;
+    justify-content: center;
+    width: 100%;
+}

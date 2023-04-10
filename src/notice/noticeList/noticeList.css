@@ -1,0 +1,173 @@
+page {
+    background-color: #f4f6f8;
+}
+
+.confirm_button,
+.confirm_button_disable {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    border-radius: 49rpx !important;
+    color: #fff !important;
+    font-size: 36rpx !important;
+    font-weight: 500rpx !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.confirm_button_disable {
+    opacity: 0.3;
+}
+
+.cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    border-radius: 49rpx !important;
+    color: #45464e !important;
+    font-size: 36rpx !important;
+    font-weight: 0 !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.small_confirm_button {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    color: #fff !important;
+    font-weight: 500rpx !important;
+}
+
+.small_cancle_button,
+.small_confirm_button {
+    border-radius: 40rpx !important;
+    font-size: 36rpx !important;
+    height: 80rpx !important;
+    margin: 0 auto;
+    width: 240rpx;
+}
+
+.small_cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    color: #45464e !important;
+    font-weight: 0 !important;
+}
+
+.placeholder_customer_input {
+    color: #c1c1c1;
+    font-family: PingFang SC;
+    font-size: 32rpx !important;
+    font-weight: 400;
+}
+
+.notice_containers {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.notice_containers .van-tab {
+    font-size: 30rpx;
+}
+
+.notice_containers .van-tab--active {
+    font-size: 30rpx;
+    font-weight: 700;
+}
+
+.notice_containers .notice_tabs_box .notice_tab_sroll {
+    background-color: #f4f6f8;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.notice_containers .notice_tabs_box .notice_tab_sroll .notice_item_box {
+    background-color: #fff;
+    border-radius: 12rpx;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+    margin-top: 24rpx;
+}
+
+.notice_containers .notice_tabs_box .notice_tab_sroll .notice_item_box .notice_item_title_time {
+    align-items: center;
+    display: flex;
+    margin-left: 32rpx;
+    margin-right: 32rpx;
+    margin-top: 40rpx;
+}
+
+.notice_containers .notice_tabs_box .notice_tab_sroll .notice_item_box .notice_item_title_time .title_read_box {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    width: 0;
+}
+
+.notice_containers .notice_tabs_box .notice_tab_sroll .notice_item_box .notice_item_title_time .title_read_box .notice_item_title {
+    color: #1f1b27;
+    font-size: 30rpx;
+    font-weight: 700;
+    max-width: 375rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notice_containers .notice_tabs_box .notice_tab_sroll .notice_item_box .notice_item_title_time .title_read_box .notice_item_read_stauts {
+    background-color: #ff5024;
+    border-radius: 50%;
+    flex-shrink: 0;
+    height: 19rpx;
+    margin: 0 10rpx 0 0rpx;
+    width: 19rpx;
+}
+
+.notice_containers .notice_tabs_box .notice_tab_sroll .notice_item_box .notice_item_title_time .notice_item_time {
+    color: #c1c1c1;
+    flex-shrink: 0;
+    font-size: 22rpx;
+}
+
+.notice_containers .notice_tabs_box .notice_tab_sroll .notice_item_box .notice_item_content {
+    color: #9292a0;
+    font-size: 26rpx;
+    margin-left: 32rpx;
+    margin-right: 32rpx;
+    margin-top: 24rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notice_containers .notice_tabs_box .notice_tab_sroll .notice_item_box .notice_item_bot_txt {
+    align-items: center;
+    border-top: 1rpx solid #f7f7f7;
+    color: #ef4034;
+    display: flex;
+    font-size: 26rpx;
+    height: 85rpx;
+    margin-top: 24rpx;
+    padding: 0 32rpx;
+}
+
+.notice_containers .notice_tabs_box .notice_tab_sroll .notice_item_box .notice_item_bot {
+    margin-bottom: 40rpx;
+}
+
+.notice_containers .notice_tabs_box .empty_box {
+    align-items: center;
+    align-self: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 44px - 24rpx);
+    margin-top: 24rpx;
+    width: 100%;
+}

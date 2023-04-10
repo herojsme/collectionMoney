@@ -1,0 +1,111 @@
+page {
+    background-color: #f4f6f8;
+}
+
+.confirm_button,
+.confirm_button_disable {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    border-radius: 49rpx !important;
+    color: #fff !important;
+    font-size: 36rpx !important;
+    font-weight: 500rpx !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.confirm_button_disable {
+    opacity: 0.3;
+}
+
+.cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    border-radius: 49rpx !important;
+    color: #45464e !important;
+    font-size: 36rpx !important;
+    font-weight: 0 !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.small_confirm_button {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    color: #fff !important;
+    font-weight: 500rpx !important;
+}
+
+.small_cancle_button,
+.small_confirm_button {
+    border-radius: 40rpx !important;
+    font-size: 36rpx !important;
+    height: 80rpx !important;
+    margin: 0 auto;
+    width: 240rpx;
+}
+
+.small_cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    color: #45464e !important;
+    font-weight: 0 !important;
+}
+
+.placeholder_customer_input {
+    color: #c1c1c1;
+    font-family: PingFang SC;
+    font-size: 32rpx !important;
+    font-weight: 400;
+}
+
+page {
+    background-color: #fff;
+}
+
+.login_container {
+    height: 100%;
+}
+
+.login_container,
+.login_container .class_successBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login_container .class_successBox {
+    align-items: center;
+    justify-content: center;
+    margin: 64rpx 0rpx;
+}
+
+.login_container .class_descBox {
+    color: #1f1b27;
+    font-size: 36rpx;
+    font-weight: 600;
+    text-align: center;
+}
+
+.login_container .login_btnBox {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin-top: 75rpx;
+}
+
+.login_container .login_btnBox .yellow_button {
+    background: linear-gradient(90deg, #ef4034, #ef4034) !important;
+    border: #2c2f35 !important;
+    border-radius: 49rpx;
+    box-shadow: 2rpx 10rpx 24rpx #b4b4bc;
+    color: #45464e;
+    font-size: 36rpx;
+    font-weight: 500;
+    height: 90rpx;
+    margin: 0 auto;
+    opacity: 1;
+    width: 670rpx;
+}

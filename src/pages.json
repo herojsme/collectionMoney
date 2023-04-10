@@ -1,16 +1,51 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/home/home",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarBackgroundColor": "#F4F6F8",
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/myself/myself",
+			"style": {
+				"navigationBarBackgroundColor": "#F4F6F8",
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "收款呗",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	// pages.json-globalStyle同级下添加
+	"easycom": {
+		"autoscan": true, // 是否开启自动扫描
+		"custom": {
+			"van-(.*)": "@/wxcomponents/vantWeapp/$1/index"
+		}
+	},
+	"tabBar": {
+		"color": "#C1C1C1",
+		"selectedColor": "#1F1B27",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "static/assets/image/myself/index_icon.png",
+				"selectedIconPath": "static/assets/image/myself/index_icon_active.png"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/myself/myself",
+				"iconPath": "static/assets/image/myself/myself_icon.png",
+				"selectedIconPath": "static/assets/image/myself/myself_icon_active.png"
+			}
+		]
 	}
 }

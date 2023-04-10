@@ -1,0 +1,130 @@
+.confirm_button,
+.confirm_button_disable {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    border-radius: 49rpx !important;
+    color: #fff !important;
+    font-size: 36rpx !important;
+    font-weight: 500rpx !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.confirm_button_disable {
+    opacity: 0.3;
+}
+
+.cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    border-radius: 49rpx !important;
+    color: #45464e !important;
+    font-size: 36rpx !important;
+    font-weight: 0 !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.small_confirm_button {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    color: #fff !important;
+    font-weight: 500rpx !important;
+}
+
+.small_cancle_button,
+.small_confirm_button {
+    border-radius: 40rpx !important;
+    font-size: 36rpx !important;
+    height: 80rpx !important;
+    margin: 0 auto;
+    width: 240rpx;
+}
+
+.small_cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    color: #45464e !important;
+    font-weight: 0 !important;
+}
+
+.placeholder_customer_input {
+    color: #c1c1c1;
+    font-family: PingFang SC;
+    font-size: 32rpx !important;
+    font-weight: 400;
+}
+
+page {
+    background-color: #f4f6f8;
+}
+
+.merge_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.merge_container .class_header_time_box {
+    align-items: center;
+    color: #666;
+    display: flex;
+    font-size: 24rpx;
+    margin: 24rpx 40rpx;
+}
+
+.merge_container .class_header_time_box .arrow_icon {
+    height: 13rpx;
+    margin-bottom: 5rpx;
+    margin-left: 12rpx;
+    width: 20rpx;
+}
+
+.merge_container .class_rowBox {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.merge_container .class_rowBox .class_titleBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.merge_container .class_rowBox .class_titleBox .title {
+    color: #1f1b27;
+    flex: 1;
+    font-family: PingFang SC;
+    font-weight: 500;
+    margin: 32rpx 40rpx 0rpx;
+}
+
+.merge_container .class_rowBox .class_titleBox .time {
+    color: #c1c1c1;
+    flex: 1;
+    font-family: PingFang SC;
+    font-size: 26rpx;
+    font-weight: 400;
+    margin: 32rpx 40rpx;
+}
+
+.merge_container .class_rowBox .class_rowDescBox {
+    color: #c1c1c1;
+    font-family: PingFang SC;
+    font-size: 26rpx;
+    font-weight: 400;
+    margin: 0rpx 40rpx;
+}
+
+.merge_container .class_rowBox .class_bottomLine {
+    background-color: #f7f7f7;
+    height: 2rpx;
+    margin: 32rpx 32rpx 0rpx;
+}
+
+.merge_container .van-empty__image__img {
+    height: 428rpx;
+    width: 352rpx;
+}

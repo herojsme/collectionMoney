@@ -1,0 +1,85 @@
+.confirm_button,
+.confirm_button_disable {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    border-radius: 49rpx !important;
+    color: #fff !important;
+    font-size: 36rpx !important;
+    font-weight: 500rpx !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.confirm_button_disable {
+    opacity: 0.3;
+}
+
+.cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    border-radius: 49rpx !important;
+    color: #45464e !important;
+    font-size: 36rpx !important;
+    font-weight: 0 !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.small_confirm_button {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    color: #fff !important;
+    font-weight: 500rpx !important;
+}
+
+.small_cancle_button,
+.small_confirm_button {
+    border-radius: 40rpx !important;
+    font-size: 36rpx !important;
+    height: 80rpx !important;
+    margin: 0 auto;
+    width: 240rpx;
+}
+
+.small_cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    color: #45464e !important;
+    font-weight: 0 !important;
+}
+
+.placeholder_customer_input {
+    color: #c1c1c1;
+    font-family: PingFang SC;
+    font-size: 32rpx !important;
+    font-weight: 400;
+}
+
+page {
+    background-color: #f4f6f8;
+}
+
+.container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 32rpx;
+}
+
+.container .title_icon {
+    align-items: center;
+    border-bottom: 1rpx solid #f7f7f7;
+    display: flex;
+    height: 106rpx;
+    margin: 0 40rpx;
+}
+
+.container .title_icon .title {
+    color: #45464e;
+    flex: 1;
+    font-size: 30rpx;
+    font-weight: 600;
+}

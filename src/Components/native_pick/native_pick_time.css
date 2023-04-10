@@ -1,0 +1,98 @@
+page {
+    background-color: #f4f6f8;
+}
+
+.confirm_button,
+.confirm_button_disable {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    border-radius: 49rpx !important;
+    color: #fff !important;
+    font-size: 36rpx !important;
+    font-weight: 500rpx !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.confirm_button_disable {
+    opacity: 0.3;
+}
+
+.cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    border-radius: 49rpx !important;
+    color: #45464e !important;
+    font-size: 36rpx !important;
+    font-weight: 0 !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.small_confirm_button {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    color: #fff !important;
+    font-weight: 500rpx !important;
+}
+
+.small_cancle_button,
+.small_confirm_button {
+    border-radius: 40rpx !important;
+    font-size: 36rpx !important;
+    height: 80rpx !important;
+    margin: 0 auto;
+    width: 240rpx;
+}
+
+.small_cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    color: #45464e !important;
+    font-weight: 0 !important;
+}
+
+.placeholder_customer_input {
+    color: #c1c1c1;
+    font-family: PingFang SC;
+    font-size: 32rpx !important;
+    font-weight: 400;
+}
+
+.time_selelct_box .class_title_box {
+    align-items: center;
+    height: 100rpx;
+}
+
+.time_selelct_box .class_title_box,
+.time_selelct_box .time_pick_bottom_box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.time_selelct_box .time_pick_bottom_box {
+    margin-bottom: 57rpx;
+    margin-top: 57rpx;
+}
+
+.time_selelct_box .time_pick_bottom_box .van-button {
+    border-radius: 40rpx;
+    font-size: 30rpx;
+    font-weight: 700;
+    height: 80rpx;
+    width: 243rpx;
+}
+
+.time_selelct_box .time_pick_bottom_box .cancel_button {
+    background-color: #f4f5f7;
+    color: #3c3c3c;
+    width: 200rpx;
+}
+
+.time_selelct_box .time_pick_bottom_box .confirm_button {
+    background-color: linear-gradient(90deg, #525761 100%, #272930 0);
+    color: #fff;
+    width: 200rpx;
+}

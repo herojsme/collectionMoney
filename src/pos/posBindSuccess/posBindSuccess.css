@@ -1,0 +1,116 @@
+page {
+    background-color: #f4f6f8;
+}
+
+.confirm_button,
+.confirm_button_disable {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    border-radius: 49rpx !important;
+    color: #fff !important;
+    font-size: 36rpx !important;
+    font-weight: 500rpx !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.confirm_button_disable {
+    opacity: 0.3;
+}
+
+.cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    border-radius: 49rpx !important;
+    color: #45464e !important;
+    font-size: 36rpx !important;
+    font-weight: 0 !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.small_confirm_button {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    color: #fff !important;
+    font-weight: 500rpx !important;
+}
+
+.small_cancle_button,
+.small_confirm_button {
+    border-radius: 40rpx !important;
+    font-size: 36rpx !important;
+    height: 80rpx !important;
+    margin: 0 auto;
+    width: 240rpx;
+}
+
+.small_cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    color: #45464e !important;
+    font-weight: 0 !important;
+}
+
+.placeholder_customer_input {
+    color: #c1c1c1;
+    font-family: PingFang SC;
+    font-size: 32rpx !important;
+    font-weight: 400;
+}
+
+page {
+    flex-direction: column;
+    height: 100%;
+}
+
+.page_wrap,
+page {
+    display: flex;
+}
+
+.page_wrap {
+    align-items: center;
+    background-color: #fff;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40rpx;
+    position: relative;
+    width: 100%;
+}
+
+.page_wrap .icon_wrap {
+    height: 172rpx;
+    position: absolute;
+    top: 64rpx;
+    width: 190rpx;
+}
+
+.page_wrap .icon_wrap .success_icon {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.page_wrap .tip_txt {
+    padding: 40rpx 0;
+    position: absolute;
+    top: 294rpx;
+}
+
+.page_wrap .btn_wrap {
+    position: absolute;
+    top: 419rpx;
+}
+
+.page_wrap .btn_wrap .confirm_button {
+    background: linear-gradient(90deg, #f4c998, #d9a169) !important;
+    box-shadow: 2rpx 10rpx 24rpx #f9dcb9;
+}
+
+.page_wrap .bg {
+    background: #d9b372 !important;
+}

@@ -1,0 +1,161 @@
+page {
+    background-color: #f4f6f8;
+}
+
+.confirm_button,
+.confirm_button_disable {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    border-radius: 49rpx !important;
+    color: #fff !important;
+    font-size: 36rpx !important;
+    font-weight: 500rpx !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.confirm_button_disable {
+    opacity: 0.3;
+}
+
+.cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    border-radius: 49rpx !important;
+    color: #45464e !important;
+    font-size: 36rpx !important;
+    font-weight: 0 !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.small_confirm_button {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    color: #fff !important;
+    font-weight: 500rpx !important;
+}
+
+.small_cancle_button,
+.small_confirm_button {
+    border-radius: 40rpx !important;
+    font-size: 36rpx !important;
+    height: 80rpx !important;
+    margin: 0 auto;
+    width: 240rpx;
+}
+
+.small_cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    color: #45464e !important;
+    font-weight: 0 !important;
+}
+
+.placeholder_customer_input {
+    color: #c1c1c1;
+    font-family: PingFang SC;
+    font-size: 32rpx !important;
+    font-weight: 400;
+}
+
+page {
+    background-color: #f1f1f1;
+}
+
+.login_container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.login_container .login_top {
+    flex: 1;
+}
+
+.login_container .login_top,
+.login_container .login_top .login_logoBox {
+    display: flex;
+    justify-content: center;
+}
+
+.login_container .login_top .login_logoBox {
+    align-items: center;
+    flex-direction: column;
+}
+
+.login_container .login_top .login_logoBox image {
+    height: 175rpx;
+    width: 175rpx;
+}
+
+.login_container .login_top .login_logoBox .login_appNameBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 31rpx;
+    width: 100%;
+}
+
+.login_container .login_top .login_logoBox .login_appNameBox text {
+    color: #1f1b27;
+    font-family: PingFang SC-Medium, PingFang SC;
+    font-size: 38rpx;
+    font-weight: 500;
+    height: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.login_container .login_bottom {
+    flex: 1;
+}
+
+.login_container .login_bottom,
+.login_container .login_bottom .login_bottomBox {
+    display: flex;
+    justify-content: center;
+}
+
+.login_container .login_bottom .login_bottomBox {
+    align-items: center;
+    background: #f1f1f1;
+    flex-direction: column;
+}
+
+.login_container .login_bottom .login_bottomBox .xcancle_button {
+    background: #f4f6f8 !important;
+    border: 2rpx solid #ef4034;
+    border-radius: 49rpx !important;
+    color: #ef4034;
+    font-size: 36rpx !important;
+    font-weight: 0 !important;
+    height: 98rpx !important;
+    margin: 20rpx auto 0;
+    width: 670rpx;
+}
+
+.login_container .login_bottom .login_bottomBox .class_xiyiBox {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 49rpx;
+}
+
+.login_container .login_bottom .login_bottomBox .class_xiyiBox image {
+    height: 28rpx;
+    width: 28rpx;
+}
+
+.login_container .login_bottom .login_bottomBox .class_xiyiBox .class_xiyiTextBox {
+    color: #45464e;
+    display: inline;
+    font-size: 26rpx;
+    margin-left: 16rpx;
+}
+
+.login_container .login_bottom .login_bottomBox .class_xiyiBox .class_xiyiTextBox text {
+    color: #ef4034;
+}

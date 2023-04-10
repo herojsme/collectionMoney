@@ -1,0 +1,29 @@
+.bank {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.searchCustom {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.bank_scroll {
+    height: calc(100%-200rpx);
+    margin-top: 120rpx;
+    width: 100%;
+}
+
+.bank_item {
+    align-items: center;
+    border-bottom: 1px solid #f7f7f7;
+    display: flex;
+    font-size: 30rpx;
+    height: 80rpx;
+    margin-left: 5%;
+    width: 90%;
+}

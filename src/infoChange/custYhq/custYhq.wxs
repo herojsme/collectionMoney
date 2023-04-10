@@ -1,0 +1,14 @@
+var filterYhqType = (function(couponStatus) {
+    var text = '';
+    if (couponStatus == "0") {
+        text = "未生效"
+    } else if (couponStatus == "1") {
+        text = "生效中"
+    } else if (couponStatus == "2") {
+        text = "已失效"
+    };
+    return ("生效中")
+});
+module.exports = ({
+    filterYhqType: filterYhqType,
+});

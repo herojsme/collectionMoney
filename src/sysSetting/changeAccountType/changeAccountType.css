@@ -1,0 +1,53 @@
+.setting_cell {
+    background-color: #fff;
+    height: 134rpx;
+    margin-top: 24rpx;
+}
+
+.setting_cell,
+.setting_cell .main {
+    align-items: center;
+    display: flex;
+}
+
+.setting_cell .main {
+    justify-content: space-between;
+    margin: 0 40rpx;
+    width: 100%;
+}
+
+.setting_cell .main .rb {
+    align-items: center;
+    display: flex;
+}
+
+.setting_cell .main .rb .arrow_tip,
+.setting_cell .main .rb .telephone {
+    color: #333;
+    font-family: PingFang SC;
+    font-size: 30rpx;
+    font-weight: 400;
+    margin-right: 21rpx;
+}
+
+.setting_cell .setting_title {
+    color: #333;
+    font-size: 30rpx;
+    line-height: 42rpx;
+}
+
+.setting_cell .setting_title,
+.tip {
+    font-family: PingFang SC;
+    font-weight: 400;
+}
+
+.tip {
+    color: #999;
+    font-size: 26rpx;
+    margin: 24rpx 40rpx 0;
+}
+
+.confirm_button {
+    margin: 60rpx 40rpx 0;
+}

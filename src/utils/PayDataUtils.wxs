@@ -1,0 +1,71 @@
+var payTypeStr = (function(payType) {
+    var text = "";
+    switch (payType) {
+        case "YHK":
+            text = "刷卡";
+            break;
+        case "ZFB":
+            text = "支付宝";
+            break;
+        case "NFC":
+            ;
+        case "YSF":
+            text = "NFC";
+            break;
+        default:
+            text = "其它";
+            break;
+    };
+    return (text)
+});
+var transStatusStr = (function(transStatus) {
+    console.log(transStatus);
+    var text = "/";
+    switch (transStatus) {
+        case "INIT":
+            text = "初始中";
+            break;
+        case "SUCCESS":
+            text = "交易成功";
+            break;
+        case "ERROR":
+            text = "交易失败";
+            break;
+        case "NONPAY":
+            text = "待支付";
+            break;
+        case "UNKOWN":
+            text = "未知";
+            break;
+    };
+    return (text)
+});
+var payTypeIcon = (function(payType) {
+    var payIconPath = "https://www.krppay.com/skb_assets/ic_trans_pay_swipe.png";
+    switch (payType) {
+        case "ZFB":
+            payIconPath = "https://www.krppay.com/skb_assets/ic_trans_pay_alipay.png";
+            break;
+        case "NFC":
+            ;
+        case "YSF":
+            payIconPath = "https://www.krppay.com/skb_assets/ic_trans_pay_nfc.png";
+            break;
+    };
+    return (payIconPath)
+});
+var settleCycleTypeIcon = (function(settleCycle) {
+    var settleCycleIcon = "";
+    if (settleCycle == "T0") {
+        settleCycleIcon = "https://www.krppay.com/skb_assets/ic_settle_t0.png"
+    } else {
+        settleCycleIcon = "https://www.krppay.com/skb_assets/ic_settle_t1.png"
+    };
+    return (settleCycleIcon)
+});
+module.exports = ({
+    payTypeIcon: payTypeIcon,
+    payTypeStr: payTypeStr,
+    settleCycleTypeIcon: settleCycleTypeIcon,
+    transStatusStr: transStatusStr,
+});

@@ -1,0 +1,156 @@
+page {
+    background-color: #fff;
+}
+
+.title {
+    font-size: 48rpx;
+}
+
+.tip,
+.title {
+    color: #3c3c3c;
+    font-family: PingFang SC;
+    font-weight: 700;
+    margin-left: 40rpx;
+    margin-top: 57rpx;
+}
+
+.tip {
+    font-size: 30rpx;
+}
+
+.popup_title {
+    border-bottom: 1rpx solid #f2f0f3;
+    height: 122rpx;
+    position: relative;
+}
+
+.popup_title .main_title {
+    color: #1a1a1a;
+    font-size: 30rpx;
+    justify-content: center;
+}
+
+.popup_title .forget,
+.popup_title .main_title {
+    align-items: center;
+    display: flex;
+    font-family: PingFang-SC-Bold, PingFang-SC;
+    font-weight: 700;
+    height: 100%;
+}
+
+.popup_title .forget {
+    color: #fe3c53;
+    font-size: 26rpx;
+    margin-left: 32rpx;
+    position: absolute;
+}
+
+.popup_cell {
+    align-items: center;
+    display: flex;
+    height: 120rpx;
+    justify-content: space-between;
+    margin: 0 31rpx;
+}
+
+.popup_cell .title {
+    color: #1a1a1a;
+}
+
+.popup_cell .content,
+.popup_cell .title {
+    font-family: PingFang-SC-Bold, PingFang-SC;
+    font-size: 30rpx;
+    font-weight: 700;
+}
+
+.popup_cell .content {
+    color: #999;
+}
+
+.password_box {
+    display: flex;
+    height: 144rpx;
+    margin: 32rpx auto 0;
+    width: 690rpx;
+}
+
+.password_box .password_cell {
+    align-items: center;
+    display: block;
+    display: -webkit-flex;
+    display: flex;
+    height: 114rpx;
+    justify-content: center;
+    width: 114rpx;
+}
+
+.password_box .password_cell:first-child {
+    border: 1px solid #e6e6e6;
+}
+
+.password_box .password_cell:not(:first-child) {
+    border-bottom: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+}
+
+.password_box .password_cell .point {
+    background-color: #000;
+    border-radius: 50%;
+    height: 30rpx;
+    width: 30rpx;
+}
+
+.class_bottomLookDetail {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.class_bottomLookDetail text {
+    color: #ff324b;
+    font-size: 24rpx;
+    margin-top: 48rpx;
+}
+
+.password_input_box {
+    bottom: 0rpx;
+    height: 447rpx;
+    position: fixed;
+    width: 100%;
+}
+
+.password_input_box .gray {
+    background-color: #f4f5f7;
+}
+
+.password_input_box .NumberKeyboard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.password_input_box .NumberKeyboard .NumberKeyboard_cell {
+    align-items: center;
+    border-right: 1rpx solid #f2f0f3;
+    border-top: 1rpx solid #f2f0f3;
+    color: #3c3c3c;
+    display: flex;
+    font-family: PingFang SC;
+    font-size: 48rpx;
+    height: 110rpx;
+    justify-content: center;
+    width: 33%;
+}
+
+.password_input_box .NumberKeyboard .NumberKeyboard_cell:nth-child(3n) {
+    border-right: none;
+}
+
+.password_input_box .NumberKeyboard .NumberKeyboard_cell .delete_icon {
+    height: 32rpx;
+    width: 39rpx;
+}

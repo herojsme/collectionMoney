@@ -1,0 +1,71 @@
+page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top_box {
+    background-color: #fff;
+    border: 1rpx solid transparent;
+    height: 214rpx;
+    margin-top: 24rpx;
+}
+
+.top_box .title {
+    color: #222124;
+    font-size: 60rpx;
+    margin: 86rpx 0 0 40rpx;
+}
+
+.top_box .cust_info,
+.top_box .title {
+    font-family: PingFang SC;
+    font-weight: 700;
+}
+
+.top_box .cust_info {
+    color: #666;
+    font-size: 30rpx;
+    margin-left: 40rpx;
+    margin-top: 33rpx;
+}
+
+.something_need {
+    background-color: #fff;
+    flex: 1;
+    margin-top: 24rpx;
+}
+
+.something_need .main {
+    margin: 0 40rpx;
+}
+
+.something_need .main .title {
+    color: #666;
+    font-family: PingFang SC;
+    font-size: 30rpx;
+    font-weight: 400;
+    margin-top: 46rpx;
+}
+
+.something_need .main .cell {
+    align-items: center;
+    height: 120rpx;
+    justify-content: space-between;
+}
+
+.something_need .main .cell,
+.something_need .main .cell .rb {
+    display: flex;
+}
+
+.something_need .main .cell .rb .tip {
+    color: #999;
+    font-family: PingFang SC;
+    font-size: 30rpx;
+    font-weight: 700;
+}
+
+.something_need .main .first_cell {
+    border-bottom: 1rpx solid #ececec;
+}

@@ -1,0 +1,30 @@
+.class_optionBox {
+    justify-content: space-between;
+    margin-left: 34rpx;
+    margin-top: 40rpx;
+    width: 90%;
+}
+
+.class_optionBox,
+.class_optionBox .classIdBox {
+    align-items: center;
+    display: flex;
+}
+
+.class_optionBox .classIdBox {
+    background-color: #f4f6f8;
+    border: 1rpx solid #f4f6f8;
+    border-radius: 10rpx;
+    flex-direction: column;
+    height: auto;
+    width: 45%;
+}
+
+.class_optionBox .classIdBox image {
+    margin-top: 20rpx;
+}
+
+.class_optionBox .classIdBox text {
+    color: #666;
+    font-size: 21rpx;
+}

@@ -1,0 +1,332 @@
+page {
+    background-color: #f4f6f8;
+}
+
+.confirm_button,
+.confirm_button_disable {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    border-radius: 49rpx !important;
+    color: #fff !important;
+    font-size: 36rpx !important;
+    font-weight: 500rpx !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.confirm_button_disable {
+    opacity: 0.3;
+}
+
+.cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    border-radius: 49rpx !important;
+    color: #45464e !important;
+    font-size: 36rpx !important;
+    font-weight: 0 !important;
+    height: 98rpx !important;
+    margin: 0 auto;
+    width: 670rpx;
+}
+
+.small_confirm_button {
+    background: #ef4034 !important;
+    border: #1f1b27 !important;
+    color: #fff !important;
+    font-weight: 500rpx !important;
+}
+
+.small_cancle_button,
+.small_confirm_button {
+    border-radius: 40rpx !important;
+    font-size: 36rpx !important;
+    height: 80rpx !important;
+    margin: 0 auto;
+    width: 240rpx;
+}
+
+.small_cancle_button {
+    background: #f4f6f8 !important;
+    border: #f7f7f7 !important;
+    color: #45464e !important;
+    font-weight: 0 !important;
+}
+
+.placeholder_customer_input {
+    color: #c1c1c1;
+    font-family: PingFang SC;
+    font-size: 32rpx !important;
+    font-weight: 400;
+}
+
+.main .top_bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main .top_bg,
+.main .user_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .user_box {
+    height: 110rpx;
+    margin: 240rpx 35rpx 0;
+}
+
+.main .user_box .lf_box {
+    align-items: center;
+    display: flex;
+    padding-top: 20rpx;
+    width: 100%;
+}
+
+.main .user_box .lf_box .user_head_box {
+    align-items: flex-end;
+    display: flex;
+    height: 128rpx;
+    justify-content: center;
+    position: relative;
+    width: 128rpx;
+}
+
+.main .user_box .lf_box .user_head_box .user_icon {
+    height: 128rpx;
+    width: 128rpx;
+}
+
+.main .user_box .lf_box .user_head_box .debt_icon {
+    height: 26rpx;
+    margin-bottom: 26rpx;
+    position: absolute;
+    width: 64rpx;
+}
+
+.main .user_box .lf_box .cust_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 34rpx;
+}
+
+.main .user_box .lf_box .cust_info .cust_name {
+    color: #1f1b27;
+    font-family: PingFang SC;
+    font-size: 40rpx;
+    font-weight: 500;
+}
+
+.main .user_box .lf_box .cust_info .cust_no {
+    color: #45464e;
+    font-family: PingFang SC;
+    font-size: 29rpx;
+    font-weight: 500;
+}
+
+.main .user_box .right_box {
+    height: 42rpx;
+    margin-top: 40rpx;
+    width: 147rpx;
+}
+
+.main .customer_level_box {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 120rpx;
+    margin: 35rpx 40rpx 0;
+    width: 670rpx;
+    z-index: 99;
+}
+
+.main .customer_level_box .customer_level_box_center {
+    flex: 1;
+    margin-left: 10rpx;
+}
+
+.main .customer_level_box .level_icon {
+    height: 50rpx;
+    margin-left: 26rpx;
+    margin-right: 10rpx;
+    width: 58rpx;
+}
+
+.main .customer_level_box .customer_level_now {
+    color: #fefee5;
+    font-family: PingFang SC;
+    font-size: 29rpx;
+    font-weight: 500;
+}
+
+.main .customer_level_box .customer_level_now_hint {
+    color: #fefee5;
+    font-family: PingFang SC;
+    font-size: 20rpx;
+    margin-top: 10rpx;
+}
+
+.main .customer_level_box .increase_limit {
+    align-items: center;
+    background-color: #f0d1b1;
+    border-radius: 26rpx;
+    display: flex;
+    flex-direction: row;
+    height: 52rpx;
+    justify-content: center;
+    margin-right: 30rpx;
+    width: 128rpx;
+}
+
+.main .customer_level_box .increase_limit .text {
+    color: #1f1b27;
+    font-size: 20rpx;
+    margin-left: 10rpx;
+    text-align: center;
+}
+
+.main .customer_level_box .increase_limit .arrow {
+    border: 9rpx solid transparent;
+    border-left-color: #1f1b27;
+    height: 0;
+    margin-left: 9rpx;
+    width: 0;
+}
+
+.main .common_tools {
+    background: #fff;
+    border-radius: 13rpx;
+    display: flex;
+    flex-direction: column;
+    margin: 30rpx 27rpx 0;
+    padding-bottom: 41rpx;
+    padding-top: 27rpx;
+}
+
+.main .common_tools .common_title {
+    color: #1f1b27;
+    font-family: PingFang SC;
+    font-size: 34rpx;
+    margin-bottom: 28rpx;
+    margin-left: 27rpx;
+}
+
+.main .common_tools .tools_box {
+    column-gap: 10rpx;
+    display: grid;
+    grid-auto-rows: 162rpx;
+    grid-template-columns: repeat(auto-fill, 334rpx);
+    grid-template-rows: 162rpx;
+    justify-content: space-around;
+    margin-left: 8rpx;
+    margin-right: 8rpx;
+    row-gap: 27rpx;
+}
+
+.main .common_tools .tools_box .tools_cell {
+    grid-gap: 10rpx;
+    background-color: hsla(0, 0%, 98%, 0.6);
+    border-radius: 19rpx;
+}
+
+.main .common_tools .tools_box .tools_cell,
+.main .common_tools .tools_box .tools_cell .tools_name_row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main .common_tools .tools_box .tools_cell .tools_name_row {
+    grid-gap: 8rpx;
+    margin-bottom: 13rpx;
+}
+
+.main .common_tools .tools_box .tools_cell .tools_name_row .arrow_icon {
+    align-items: center;
+    background-color: #f6f6f7;
+    border-radius: 12rpx;
+}
+
+.main .common_tools .tools_box .tools_cell .tools_name_row .tools_name {
+    color: #1f1b27;
+    display: flex;
+    flex-direction: column;
+    font-family: PingFang SC;
+    font-size: 28rpx;
+    font-weight: 500;
+    font-weight: 700;
+}
+
+.main .common_tools .tools_box .tools_cell .tools_hint {
+    color: #9292a0;
+    display: inline-block;
+    font-family: PingFang SC;
+    font-size: 20rpx;
+    line-height: 28rpx;
+}
+
+.main .common_tools .tools_box .tools_cell .tools_icon {
+    height: 60rpx;
+    margin-bottom: 9rpx;
+    width: 61rpx;
+}
+
+.main .setting_box {
+    background-color: #fff;
+    border-radius: 13rpx;
+    margin: 30rpx 27rpx;
+    padding-bottom: 22rpx;
+    padding-top: 22rpx;
+}
+
+.main .setting_box .setting_title {
+    align-items: center;
+    color: #1f1b27;
+    display: flex;
+    font-family: PingFang SC;
+    font-size: 34rpx;
+    margin-bottom: 30rpx;
+    margin-left: 27rpx;
+}
+
+.main .setting_box .setting_list {
+    align-items: center;
+    display: grid;
+    grid-auto-rows: 150rpx;
+    grid-template-columns: repeat(auto-fill, 174rpx);
+    grid-template-rows: 150rpx;
+    justify-content: space-around;
+}
+
+.main .setting_box .setting_list button::after {
+    border: none;
+}
+
+.main .setting_box .setting_list .setting_cell {
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, 0);
+    display: flex;
+    flex-direction: column;
+    height: 109rpx;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    width: 174rpx;
+}
+
+.main .setting_box .setting_list .setting_cell .cell_icon {
+    size: 60rpx;
+    margin-bottom: 19rpx;
+}
+
+.main .setting_box .setting_list .setting_cell .cell_name {
+    color: #45464e;
+    font-family: PingFang SC;
+    font-size: 24rpx;
+    font-weight: 500;
+}
