@@ -15,6 +15,409 @@
 				"navigationBarTitleText": "",
 				"navigationStyle": "custom"
 			}
+		},
+		{
+			"path": "pages/transAndSettle/transAndSettle",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/mp_ecard_sdk/index/index",
+			"style": {
+				"navigationBarTitleText": "腾讯云E证通授权"
+			}
+		},
+		{
+			"path": "pages/mp_ecard_sdk/protocol/service/index",
+			"style": {
+				"navigationBarTitleText": "腾讯云E证通服务协议"
+			}
+		},
+		{
+			"path": "pages/mp_ecard_sdk/protocol/privacy/index",
+			"style": {
+				"navigationBarTitleText": "腾讯隐私政策"
+			}
+		},
+		{
+			"path": "pages/mp_ecard_sdk/protocol/userAccredit/index",
+			"style": {
+				"navigationBarTitleText": "用户授权协议"
+			}
+		},
+		{
+			"path": "pages/mp_ecard_sdk/protocol/eid/index",
+			"style": {
+				"navigationBarTitleText": "eID数字身份小程序服务协议"
+			}
+		},
+		{
+			"path": "pages/pos/posList/posList",
+			"style": {
+				"navigationBarTitleText": "终端管理"
+			}
+		},
+		{
+			"path": "pages/pos/historyList/historyList",
+			"style": {
+				"navigationBarTitleText": "终端记录"
+			}
+		},
+		{
+			"path": "pages/pos/canvas/canvas",
+			"style": {
+				"navigationBarTitleText": "签名确认",
+				"pageOrientation": "landscape"
+			}
+		},
+		{
+			"path": "pages/pos/commitmentletter/commitmentletter",
+			"style": {
+				"navigationBarTitleText": "承诺函"
+			}
+		},
+		{
+			"path": "pages/pos/faceCheck/faceCheck",
+			"style": {
+				"navigationBarTitleText": "E证通认证"
+			}
+		},
+		{
+			"path": "pages/pos/posBindSuccess/posBindSuccess",
+			"style": {}
+		},
+		{
+			"path": "pages/pos/terRecord/terCanvas/terCanvas",
+			"style": {
+				"navigationBarTitleText": "签名确认",
+				"pageOrientation": "landscape"
+			}
+		},
+		{
+			"path": "pages/pos/terRecord/terCommitmentletter/terCommitmentletter",
+			"style": {
+				"navigationBarTitleText": "承诺函"
+			}
+		},
+		{
+			"path": "pages/pos/terRecord/terFaceCheck/terFaceCheck",
+			"style": {
+				"navigationBarTitleText": "E证通认证"
+			}
+		},
+		{
+			"path": "pages/login/index/index",
+			"style": {
+				"navigationBarTitleText": "授权登录"
+			}
+		},
+		{
+			"path": "pages/login/idCardLogin/idCardLogin",
+			"style": {
+				"navigationBarTitleText": "身份证登录"
+			}
+		},
+		{
+			"path": "pages/login/accontLogin/accontLogin",
+			"style": {
+				"navigationBarTitleText": "账号登录"
+			}
+		},
+		{
+			"path": "pages/login/forgetLogPwd/forgetLogPwd",
+			"style": {}
+		},
+		{
+			"path": "pages/login/faceLogin/faceLogin",
+			"style": {
+				"navigationBarTitleText": "E证通认证"
+			}
+		},
+		{
+			"path": "pages/login/accontIdCardSelect/accontIdCardSelect",
+			"style": {
+				"navigationBarTitleText": "商户账号选择"
+			}
+		},
+		{
+			"path": "pages/login/accontSelect/accontSelect",
+			"style": {
+				"navigationBarTitleText": "商户账号选择"
+			}
+		},
+		{
+			"path": "pages/login/accontRegister/accontRegister",
+			"style": {
+				"navigationBarTitleText": "注册商户"
+			}
+		},
+		{
+			"path": "pages/login/accontRegister/bank/bank",
+			"style": {
+				"navigationBarTitleText": "银行列表"
+			}
+		},
+		{
+			"path": "pages/login/accontRegister/alliedBank/alliedBank",
+			"style": {
+				"navigationBarTitleText": "支行列表"
+			}
+		},
+		{
+			"path": "pages/login/accontRegister/hangyetype/hangyetype",
+			"style": {
+				"navigationBarTitleText": "行业选择"
+			}
+		},
+		{
+			"path": "pages/login/registerSuccess/registerSuccess",
+			"style": {
+				"navigationBarTitleText": "注册结果"
+			}
+		},
+		{
+			"path": "pages/infoChange/custYhq/custYhq",
+			"style": {
+				"navigationBarTitleText": "优惠券"
+			}
+		},
+		{
+			"path": "pages/infoChange/jieSuanChange/jieSuanChange",
+			"style": {
+				"navigationBarTitleText": "结算信息变更"
+			}
+		},
+		{
+			"path": "pages/infoChange/jieSuanFixList/jieSuanFixList",
+			"style": {
+				"navigationBarTitleText": "结算信息变更"
+			}
+		},
+		{
+			"path": "pages/infoChange/bank/bank",
+			"style": {
+				"navigationBarTitleText": "银行列表"
+			}
+		},
+		{
+			"path": "pages/infoChange/alliedBank/alliedBank",
+			"style": {
+				"navigationBarTitleText": "支行列表"
+			}
+		},
+		{
+			"path": "pages/infoChange/addressFix/address/address",
+			"style": {
+				"navigationBarTitleText": "地址变更"
+			}
+		},
+		{
+			"path": "pages/infoChange/addressFix/addressFixList/addressFixList",
+			"style": {
+				"navigationBarTitleText": "地址变更记录"
+			}
+		},
+		{
+			"path": "pages/infoChange/addressFix/addressFixDetail/addressFixDetail",
+			"style": {
+				"navigationBarTitleText": "地址变更详情"
+			}
+		},
+		{
+			"path": "pages/infoChange/addressFix/addressFixSuccess/addressFixSuccess",
+			"style": {
+				"navigationBarTitleText": "修改成功"
+			}
+		},
+		{
+			"path": "pages/infoChange/mergeAccont/mergeAccontFix/mergeAccontFix",
+			"style": {
+				"navigationBarTitleText": "到账方式变更"
+			}
+		},
+		{
+			"path": "pages/infoChange/industryType/index/index",
+			"style": {
+				"navigationBarTitleText": "行业类型变更"
+			}
+		},
+		{
+			"path": "pages/infoChange/industryType/industrylist/industrylist",
+			"style": {
+				"navigationBarTitleText": "行业变更记录"
+			}
+		},
+		{
+			"path": "pages/infoChange/industryType/hyTypeChangeList/hyTypeChangeList",
+			"style": {
+				"navigationBarTitleText": "行业选择"
+			}
+		},
+		{
+			"path": "pages/infoChange/userInfoChange/index/index",
+			"style": {
+				"navigationBarTitleText": "注册商户"
+			}
+		},
+		{
+			"path": "pages/infoChange/userInfoChange/userLiving/userLiving",
+			"style": {
+				"navigationBarTitleText": "E证通认证"
+			}
+		},
+		{
+			"path": "pages/infoChange/timeSettlement/timeSettlement",
+			"style": {
+				"navigationBarTitleText": "分时结算"
+			}
+		},
+		{
+			"path": "pages/infoChange/debitCard/canvas/canvas",
+			"style": {
+				"navigationBarTitleText": "承诺函",
+				"pageOrientation": "landscape"
+			}
+		},
+		{
+			"path": "pages/infoChange/debitCard/commit/commit",
+			"style": {
+				"navigationBarTitleText": "承诺函预览"
+			}
+		},
+		{
+			"path": "pages/infoChange/debitCard/faceCheck/faceCheck",
+			"style": {
+				"navigationBarTitleText": "E证通认证"
+			}
+		},
+		{
+			"path": "pages/sysSetting/index/index",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		},
+		{
+			"path": "pages/sysSetting/increaseLimit/increaseLimit",
+			"style": {
+				"navigationBarTitleText": "提额认证"
+			}
+		},
+		{
+			"path": "pages/sysSetting/changeLoginPwd/changeLoginPwd",
+			"style": {
+				"navigationBarTitleText": "修改登录密码"
+			}
+		},
+		{
+			"path": "pages/sysSetting/checkLoginPwd/checkLoginPwd",
+			"style": {
+				"navigationBarTitleText": "忘记支付密码"
+			}
+		},
+		{
+			"path": "pages/sysSetting/setPayPwd/setPayPwd",
+			"style": {
+				"navigationBarTitleText": "设置支付密码"
+			}
+		},
+		{
+			"path": "pages/sysSetting/setPayPwdAgain/setPayPwdAgain",
+			"style": {
+				"navigationBarTitleText": "设置支付密码"
+			}
+		},
+		{
+			"path": "pages/sysSetting/changetTelephone/changetTelephone",
+			"style": {
+				"navigationBarTitleText": "修改手机号"
+			}
+		},
+		{
+			"path": "pages/sysSetting/changeAccountType/changeAccountType",
+			"style": {
+				"navigationBarTitleText": "修改到账方式"
+			}
+		},
+		{
+			"path": "pages/sysSetting/logout/logout",
+			"style": {}
+		},
+		{
+			"path": "pages/sysSetting/somethingNeedDo/somethingNeedDo",
+			"style": {}
+		},
+		{
+			"path": "pages/sysSetting/toUnbind/toUnbind",
+			"style": {}
+		},
+		{
+			"path": "pages/sysSetting/confirmCancle/confirmCancle",
+			"style": {}
+		},
+		{
+			"path": "pages/sysSetting/aboutus/aboutus",
+			"style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		},
+		{
+			"path": "pages/sysSetting/userAgreement/userAgreement",
+			"style": {
+				"navigationBarTitleText": "政策协议"
+			}
+		},
+		{
+			"path": "pages/sysSetting/specialPricing/specialPricing",
+			"style": {
+				"navigationBarTitleText": "特殊计费"
+			}
+		},
+		{
+			"path": "pages/sysSetting/changeAccount/changeAccount",
+			"style": {
+				"navigationBarTitleText": "切换账号"
+			}
+		},
+		{
+			"path": "pages/notice/noticeList/noticeList",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "公告"
+			}
+		},
+		{
+			"path": "pages/notice/noticeDetail/noticeDetail",
+			"style": {
+				"navigationBarTitleText": "公告详情"
+			}
+		},
+		{
+			"path": "pages/baseSetting/expands/expands",
+			"style": {
+				"navigationBarTitleText": "拓展人信息"
+			}
+		},
+		{
+			"path": "pages/baseSetting/newQues/newQues",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "常见问题"
+			}
+		},
+		{
+			"path": "pages/baseSetting/feedback/feedback",
+			"style": {
+				"navigationBarTitleText": "意见反馈"
+			}
+		},
+		{
+			"path": "pages/baseSetting/myFeedback/myFeedback",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "我的反馈"
+			}
 		}
 	],
 	"globalStyle": {
@@ -39,6 +442,12 @@
 				"text": "首页",
 				"iconPath": "static/assets/image/myself/index_icon.png",
 				"selectedIconPath": "static/assets/image/myself/index_icon_active.png"
+			},
+			{
+				"text": "交易",
+				"pagePath": "pages/transAndSettle/transAndSettle",
+				"iconPath": "static/assets/image/myself/trans_icon.png",
+				"selectedIconPath": "static/assets/image/myself/trans_icon_active.png"
 			},
 			{
 				"text": "我的",

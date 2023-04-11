@@ -159,13 +159,13 @@
 </template>
 
 <script>
-// import vanIcon from '../../miniprogram_npm/@vant/weapp/icon/index';
-// import vanPopup from '../../miniprogram_npm/@vant/weapp/popup/index';
-// import vanCheckbox from '../../miniprogram_npm/@vant/weapp/checkbox/index';
-// import vanImage from '../../miniprogram_npm/@vant/weapp/image/index';
-var t = require('../../api/api').API;
+// import vanIcon from '@wc/vantWeapp/icon/index';
+// import vanPopup from '@wc/vantWeapp/popup/index';
+// import vanCheckbox from '@wc/vantWeapp/checkbox/index';
+// import vanImage from '@wc/vantWeapp/image/index';
+var t = require('@api/api').API;
 var app = getApp();
-var o = require('../../api/request').WEB_BASE_URL;
+var o = require('@api/request').WEB_BASE_URL;
 export default {
     // components: {
     //     vanIcon,

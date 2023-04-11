@@ -129,27 +129,27 @@
 <script module="filters" lang="wxs" src="@/utils/numFix.wxs"></script>
 <script module="payDataUtils" lang="wxs" src="@/utils/PayDataUtils.wxs"></script>
 <script>
-import vanTab from '../../miniprogram_npm/@vant/weapp/tab/index';
-import vanTabs from '../../miniprogram_npm/@vant/weapp/tabs/index';
-import vanIcon from '../../miniprogram_npm/@vant/weapp/icon/index';
-import vanDatetimePicker from '../../miniprogram_npm/@vant/weapp/datetime-picker/index';
-import vanPopup from '../../miniprogram_npm/@vant/weapp/popup/index';
-import vanDropdownMenu from '../../miniprogram_npm/@vant/weapp/dropdown-menu/index';
-import vanDropdownItem from '../../miniprogram_npm/@vant/weapp/dropdown-item/index';
-import vanButton from '../../miniprogram_npm/@vant/weapp/button/index';
-var t = require('../../utils/util.js');
-var e = (require('./timeUtils'), require('../../api/api').API);
+// import vanTab from '@wc/vantWeapp/tab/index';
+// import vanTabs from '@wc/vantWeapp/tabs/index';
+// import vanIcon from '@wc/vantWeapp/icon/index';
+// import vanDatetimePicker from '@wc/vantWeapp/datetime-picker/index';
+// import vanPopup from '@wc/vantWeapp/popup/index';
+// import vanDropdownMenu from '@wc/vantWeapp/dropdown-menu/index';
+// import vanDropdownItem from '@wc/vantWeapp/dropdown-item/index';
+// import vanButton from '@wc/vantWeapp/button/index';
+var t = require('@u/util.js');
+var e = (require('./timeUtils'), require('@api/api').API);
 export default {
-    components: {
-        vanTab,
-        vanTabs,
-        vanIcon,
-        vanDatetimePicker,
-        vanPopup,
-        vanDropdownMenu,
-        vanDropdownItem,
-        vanButton
-    },
+    // components: {
+    //     vanTab,
+    //     vanTabs,
+    //     vanIcon,
+    //     vanDatetimePicker,
+    //     vanPopup,
+    //     vanDropdownMenu,
+    //     vanDropdownItem,
+    //     vanButton
+    // },
     data() {
         return {
             active: 0,

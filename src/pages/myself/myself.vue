@@ -106,12 +106,12 @@
 </template>
 
 <script>
-// import vanIcon from '../../miniprogram_npm/@vant/weapp/icon/index';
-// import vanCell from '../../miniprogram_npm/@vant/weapp/cell/index';
-// import vanCellGroup from '../../miniprogram_npm/@vant/weapp/cell-group/index';
-var t = require('../../api/api').API;
-var e = require('../../api/center').centerAPI;
-var n = require('../../api/api').API;
+// import vanIcon from '@wc/vantWeapp/icon/index';
+// import vanCell from '@wc/vantWeapp/cell/index';
+// import vanCellGroup from '@wc/vantWeapp/cell-group/index';
+var t = require('@api/api').API;
+var e = require('@api/center').centerAPI;
+var n = require('@api/api').API;
 export default {
     // components: {
     //     vanIcon,

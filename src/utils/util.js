@@ -1,4 +1,4 @@
-var t = require('../@babel/runtime/helpers/slicedToArray'),
+var t = require('../pages/@babel/runtime/helpers/slicedToArray'),
     e = function (t) {
         return (t = t.toString())[1] ? t : '0'.concat(t);
     };

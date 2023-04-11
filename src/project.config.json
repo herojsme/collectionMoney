@@ -1,0 +1,31 @@
+{
+    "appid": "wx60aafc73911175f5",
+    "projectname": "wechat-app",
+    "description": "银闪闪",
+    "compileType": "miniprogram",
+    "libVersion": "2.30.3",
+    "packOptions": {
+        "ignore": [],
+        "include": []
+    },
+    "setting": {
+        "coverView": true,
+        "es6": true,
+        "postcss": true,
+        "minified": true,
+        "enhance": true,
+        "showShadowRootInWxmlPanel": true,
+        "packNpmRelationList": [],
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        }
+    },
+    "condition": {},
+    "miniprogramRoot": "../dist/mp-weixin",
+    "editorSetting": {
+        "tabIndent": "insertSpaces",
+        "tabSize": 4
+    }
+}
