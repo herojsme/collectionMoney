@@ -87,13 +87,13 @@ export default {
 
         onClickHyYtypeRow: function () {
             uni.navigateTo({
-                url: '/infoChange/industryType/hyTypeChangeList/hyTypeChangeList?areaCode=' + this.jyAreaCode
+                url: 'pages/infoChange/industryType/hyTypeChangeList/hyTypeChangeList?areaCode=' + this.jyAreaCode
             });
         },
 
         clickChageList: function () {
             uni.navigateTo({
-                url: '/infoChange/industryType/industrylist/industrylist?areaCode=' + this.hyTypeCode
+                url: 'pages/infoChange/industryType/industrylist/industrylist?areaCode=' + this.hyTypeCode
             });
         },
 

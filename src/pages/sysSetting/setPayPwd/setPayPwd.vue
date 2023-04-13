@@ -69,7 +69,7 @@ export default {
                 return this.pwdVal.length >= 6
                     ? (console.log('输入的支付密码', this.pwdVal),
                       void uni.navigateTo({
-                          url: '/sysSetting/setPayPwdAgain/setPayPwdAgain?pwdval='.concat(this.pwdVal, '&loginPwd=').concat(this.loginPwd)
+                          url: 'pages/sysSetting/setPayPwdAgain/setPayPwdAgain?pwdval='.concat(this.pwdVal, '&loginPwd=').concat(this.loginPwd)
                       }))
                     : void 0;
             }

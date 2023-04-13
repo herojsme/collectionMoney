@@ -1997,7 +1997,7 @@ define(
                     }
                     var n = 'IMG' == e.contentType ? encodeURIComponent(e.imagURl) : '';
                     uni.navigateTo({
-                        url: '/notice/noticeDetail/noticeDetail?title='
+                        url: 'pages/notice/noticeDetail/noticeDetail?title='
                             .concat(e.title, '&content=')
                             .concat(e.content ? e.content : '', '&time=')
                             .concat(e.createTime, '&noticeId=')

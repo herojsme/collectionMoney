@@ -140,7 +140,7 @@ export default {
                         fileType: 'png',
                         success: function (t) {
                             uni.redirectTo({
-                                url: '/infoChange/debitCard/commit/commit?base64Path='.concat(encodeURIComponent(uni.getFileSystemManager().readFileSync(t.tempFilePath, 'base64')))
+                                url: 'pages/infoChange/debitCard/commit/commit?base64Path='.concat(encodeURIComponent(uni.getFileSystemManager().readFileSync(t.tempFilePath, 'base64')))
                             });
                         }
                     });

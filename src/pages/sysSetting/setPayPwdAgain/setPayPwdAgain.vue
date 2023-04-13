@@ -82,7 +82,7 @@ export default {
                                 success: function (t) {
                                     if (t.confirm) {
                                         uni.redirectTo({
-                                            url: '/sysSetting/setPayPwd/setPayPwd?loginPwd='.concat(that.loginPwd)
+                                            url: 'pages/sysSetting/setPayPwd/setPayPwd?loginPwd='.concat(that.loginPwd)
                                         });
                                     }
                                 }

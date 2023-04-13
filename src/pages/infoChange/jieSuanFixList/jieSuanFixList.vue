@@ -195,7 +195,7 @@ export default {
             console.log(a);
             if ('开户银行' == a) {
                 uni.navigateTo({
-                    url: '/infoChange/bank/bank'
+                    url: 'pages/infoChange/bank/bank'
                 });
             } else {
                 if ('开户所在地' == a) {
@@ -205,7 +205,7 @@ export default {
                 } else {
                     if ('开户支行' == a) {
                         uni.navigateTo({
-                            url: '/infoChange/alliedBank/alliedBank?areaCode='.concat(this.areaCode, '&bankCode=').concat(this.bankCode)
+                            url: 'pages/infoChange/alliedBank/alliedBank?areaCode='.concat(this.areaCode, '&bankCode=').concat(this.bankCode)
                         });
                     }
                 }

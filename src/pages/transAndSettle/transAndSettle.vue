@@ -232,7 +232,7 @@ export default {
         if (!this.isLoginStatus) {
             uni.stopPullDownRefresh();
             return void uni.navigateTo({
-                url: '/login/index/index'
+                url: 'pages/login/index/index'
             });
         }
         if (this.startTimeStr && this.endTimeStr) {
@@ -325,7 +325,7 @@ export default {
                 });
             } else {
                 uni.navigateTo({
-                    url: '/login/index/index'
+                    url: 'pages/login/index/index'
                 });
             }
         },

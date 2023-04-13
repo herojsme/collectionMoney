@@ -95,7 +95,7 @@ export default {
 
         jumpSignPage: function () {
             uni.reLaunch({
-                url: '/pos/canvas/canvas?customerName='.concat(this.customerName)
+                url: 'pages/pos/canvas/canvas?customerName='.concat(this.customerName)
             });
         },
 
@@ -111,7 +111,7 @@ export default {
                         signaturePath: ''
                     });
                     uni.navigateTo({
-                        url: '/pos/faceCheck/faceCheck'
+                        url: 'pages/pos/faceCheck/faceCheck'
                     });
                     that.queryAgreementSign();
                 } else {

@@ -120,7 +120,7 @@ export default {
 
         jumpSignPage: function () {
             uni.reLaunch({
-                url: '/infoChange/debitCard/canvas/canvas?customerName='.concat(this.customerName)
+                url: 'pages/infoChange/debitCard/canvas/canvas?customerName='.concat(this.customerName)
             });
         },
 
@@ -201,7 +201,7 @@ export default {
                                             signaturePath: ''
                                         });
                                         uni.navigateTo({
-                                            url: '/infoChange/debitCard/faceCheck/faceCheck?latitude='.concat(o, '&longitude=').concat(a)
+                                            url: 'pages/infoChange/debitCard/faceCheck/faceCheck?latitude='.concat(o, '&longitude=').concat(a)
                                         });
                                         that.queryAgreementSign();
                                     } else {

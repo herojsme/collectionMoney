@@ -86,7 +86,7 @@ export default {
                         } else {
                             if (o.bindAccountCount > 1) {
                                 uni.navigateTo({
-                                    url: '/login/accontSelect/accontSelect'
+                                    url: 'pages/login/accontSelect/accontSelect'
                                 });
                             } else {
                                 if (o.bindAccountCount < 1) {
@@ -98,11 +98,11 @@ export default {
                                     }).then(function (o) {
                                         if (1 == getApp().globalData.showIdCardLogin) {
                                             uni.navigateTo({
-                                                url: '/login/idCardLogin/idCardLogin?code=1'
+                                                url: 'pages/login/idCardLogin/idCardLogin?code=1'
                                             });
                                         } else {
                                             uni.navigateTo({
-                                                url: '/login/accontLogin/accontLogin'
+                                                url: 'pages/login/accontLogin/accontLogin'
                                             });
                                         }
                                     });
@@ -114,11 +114,11 @@ export default {
                     console.log('getApp().globalData.showIdCardLogin =', getApp().globalData.showIdCardLogin);
                     if (1 == getApp().globalData.showIdCardLogin) {
                         uni.navigateTo({
-                            url: '/login/idCardLogin/idCardLogin?code=1'
+                            url: 'pages/login/idCardLogin/idCardLogin?code=1'
                         });
                     } else {
                         uni.navigateTo({
-                            url: '/login/accontLogin/accontLogin'
+                            url: 'pages/login/accontLogin/accontLogin'
                         });
                     }
                 }
@@ -133,7 +133,7 @@ export default {
         clickAccontLogin: function () {
             if (this.isAgree) {
                 uni.navigateTo({
-                    url: '/login/accontLogin/accontLogin?from=accontLogin'
+                    url: 'pages/login/accontLogin/accontLogin?from=accontLogin'
                 });
             } else {
                 uni.showToast({
@@ -232,7 +232,7 @@ export default {
         getPhoneNumberTest: function (o) {
             console.log(o.detail);
             uni.navigateTo({
-                url: '/login/idCardLogin/idCardLogin?code=1'
+                url: 'pages/login/idCardLogin/idCardLogin?code=1'
             });
         },
 

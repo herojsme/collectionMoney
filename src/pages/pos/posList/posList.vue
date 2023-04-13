@@ -146,7 +146,7 @@ export default {
 
         toHistory: function () {
             uni.navigateTo({
-                url: '/pos/historyList/historyList'
+                url: 'pages/pos/historyList/historyList'
             });
         },
 

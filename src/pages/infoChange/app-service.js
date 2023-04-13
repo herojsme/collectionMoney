@@ -4603,7 +4603,7 @@ define(
                 clickFix: function () {
                     console.log('修改'),
                         uni.navigateTo({
-                            url: '/infoChange/jieSuanFixList/jieSuanFixList?bankInfo'
+                            url: 'pages/infoChange/jieSuanFixList/jieSuanFixList?bankInfo'
                         });
                 },
 
@@ -4680,7 +4680,7 @@ define(
                     console.log(a),
                         '开户银行' == a
                             ? uni.navigateTo({
-                                  url: '/infoChange/bank/bank'
+                                  url: 'pages/infoChange/bank/bank'
                               })
                             : '开户所在地' == a
                             ? this.setData({
@@ -4688,7 +4688,7 @@ define(
                               })
                             : '开户支行' == a &&
                               uni.navigateTo({
-                                  url: '/infoChange/alliedBank/alliedBank?areaCode='.concat(this.areaCode, '&bankCode=').concat(this.bankCode)
+                                  url: 'pages/infoChange/alliedBank/alliedBank?areaCode='.concat(this.areaCode, '&bankCode=').concat(this.bankCode)
                               });
                 },
 
@@ -4901,7 +4901,7 @@ define(
                 clickChageList: function () {
                     console.log('点击了变更记录'),
                         uni.navigateTo({
-                            url: '/infoChange/addressFix/addressFixList/addressFixList'
+                            url: 'pages/infoChange/addressFix/addressFixList/addressFixList'
                         });
                 },
 
@@ -5125,7 +5125,7 @@ define(
                     console.log('item ', e),
                         uni.setStorageSync('addressDetail', e),
                         uni.navigateTo({
-                            url: '/infoChange/addressFix/addressFixDetail/addressFixDetail'
+                            url: 'pages/infoChange/addressFix/addressFixDetail/addressFixDetail'
                         });
                 },
 
@@ -5233,13 +5233,13 @@ define(
 
                 onClickHyYtypeRow: function () {
                     uni.navigateTo({
-                        url: '/infoChange/industryType/hyTypeChangeList/hyTypeChangeList?areaCode=' + this.jyAreaCode
+                        url: 'pages/infoChange/industryType/hyTypeChangeList/hyTypeChangeList?areaCode=' + this.jyAreaCode
                     });
                 },
 
                 clickChageList: function () {
                     uni.navigateTo({
-                        url: '/infoChange/industryType/industrylist/industrylist?areaCode=' + this.hyTypeCode
+                        url: 'pages/infoChange/industryType/industrylist/industrylist?areaCode=' + this.hyTypeCode
                     });
                 },
 
@@ -5486,7 +5486,7 @@ define(
                         idCardRenzhengShow: !0
                     }),
                         uni.navigateTo({
-                            url: '/infoChange/userInfoChange/userLiving/userLiving'
+                            url: 'pages/infoChange/userInfoChange/userLiving/userLiving'
                         });
                 },
 
@@ -5501,7 +5501,7 @@ define(
 
                 clickFaceScan: function () {
                     uni.navigateTo({
-                        url: '/infoChange/addressFix/addressFixSuccess/addressFixSuccess?message=信息提交完成，等待运营人员审核&navigationTitle=活体验证'
+                        url: 'pages/infoChange/addressFix/addressFixSuccess/addressFixSuccess?message=信息提交完成，等待运营人员审核&navigationTitle=活体验证'
                     });
                 },
 
@@ -5626,7 +5626,7 @@ define(
                                   fileType: 'png',
                                   success: function (t) {
                                       uni.redirectTo({
-                                          url: '/infoChange/debitCard/commit/commit?base64Path='.concat(
+                                          url: 'pages/infoChange/debitCard/commit/commit?base64Path='.concat(
                                               encodeURIComponent(uni.getFileSystemManager().readFileSync(t.tempFilePath, 'base64'))
                                           )
                                       });
@@ -5677,7 +5677,7 @@ define(
 
                 jumpSignPage: function () {
                     uni.reLaunch({
-                        url: '/infoChange/debitCard/canvas/canvas?customerName='.concat(this.customerName)
+                        url: 'pages/infoChange/debitCard/canvas/canvas?customerName='.concat(this.customerName)
                     });
                 },
 
@@ -5747,7 +5747,7 @@ define(
                                                       signaturePath: ''
                                                   }),
                                                   uni.navigateTo({
-                                                      url: '/infoChange/debitCard/faceCheck/faceCheck?latitude='.concat(o, '&longitude=').concat(a)
+                                                      url: 'pages/infoChange/debitCard/faceCheck/faceCheck?latitude='.concat(o, '&longitude=').concat(a)
                                                   }),
                                                   e.queryAgreementSign())
                                                 : t.message &&

@@ -129,7 +129,7 @@ export default {
                 {
                     iconUrl: 'https://www.krppay.com/skb_assets/pos_icon.png',
                     name: '我的终端',
-                    url: '/pos/posList/posList',
+                    url: 'pages/pos/posList/posList',
                     hint: '绑定机具享便捷\n支付体验'
                 },
                 {
@@ -163,22 +163,22 @@ export default {
                 {
                     name: '常见问题',
                     icon: 'https://www.krppay.com/skb_assets/ic_my_gray_ques.png',
-                    url: '/baseSetting/newQues/newQues'
+                    url: 'pages/baseSetting/newQues/newQues'
                 },
                 {
                     name: '意见反馈',
                     icon: 'https://www.krppay.com/skb_assets/ic_my_feedback.png',
-                    url: '/baseSetting/feedback/feedback'
+                    url: 'pages/baseSetting/feedback/feedback'
                 },
                 {
                     name: '关于我们',
                     icon: 'https://www.krppay.com/skb_assets/aboutUS.png',
-                    url: '/sysSetting/aboutus/aboutus'
+                    url: 'pages/sysSetting/aboutus/aboutus'
                 },
                 {
                     name: '系统设置',
                     icon: 'https://www.krppay.com/skb_assets/sys_icon.png',
-                    url: '/sysSetting/index/index'
+                    url: 'pages/sysSetting/index/index'
                 }
             ],
             isLoginStatus: false,
@@ -228,7 +228,7 @@ export default {
                                     });
                             } else {
                                 uni.navigateTo({
-                                    url: '/login/index/index'
+                                    url: 'pages/login/index/index'
                                 });
                             }
                         } else {
@@ -263,7 +263,7 @@ export default {
                         n.push({
                             name: '拓展人信息',
                             icon: 'https://www.krppay.com/skb_assets/develop_icon.png',
-                            url: '/baseSetting/expands/expands'
+                            url: 'pages/baseSetting/expands/expands'
                         });
                     }
                     that.setData({
@@ -279,22 +279,22 @@ export default {
                             {
                                 name: '常见问题',
                                 icon: 'https://www.krppay.com/skb_assets/ic_my_gray_ques.png',
-                                url: '/baseSetting/newQues/newQues'
+                                url: 'pages/baseSetting/newQues/newQues'
                             },
                             {
                                 name: '意见反馈',
                                 icon: 'https://www.krppay.com/skb_assets/ic_my_feedback.png',
-                                url: '/baseSetting/feedback/feedback'
+                                url: 'pages/baseSetting/feedback/feedback'
                             },
                             {
                                 name: '关于我们',
                                 icon: 'https://www.krppay.com/skb_assets/aboutUS.png',
-                                url: '/sysSetting/aboutus/aboutus'
+                                url: 'pages/sysSetting/aboutus/aboutus'
                             },
                             {
                                 name: '系统设置',
                                 icon: 'https://www.krppay.com/skb_assets/sys_icon.png',
-                                url: '/sysSetting/index/index'
+                                url: 'pages/sysSetting/index/index'
                             }
                         ])
                     });
@@ -329,7 +329,7 @@ export default {
                     });
             } else {
                 uni.navigateTo({
-                    url: '/login/index/index'
+                    url: 'pages/login/index/index'
                 });
             }
         },
@@ -380,7 +380,7 @@ export default {
                             that.settingList.unshift({
                                 name: '双录验证',
                                 icon: 'https://www.krppay.com/skb_assets/ic_my_double_record.png',
-                                url: '/pos/commitmentletter/commitmentletter'
+                                url: 'pages/pos/commitmentletter/commitmentletter'
                             });
                             that.setData({
                                 settingList: that.settingList
