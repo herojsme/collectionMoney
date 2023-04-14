@@ -269,6 +269,9 @@
 // import vanCheckbox from '@wc/vantWeapp/checkbox/index';
 // import vanImage from '@wc/vantWeapp/image/index';
 var t = require("@api/api").API;
+import { API } from "@api/api";
+
+console.log("API", API);
 var app = getApp();
 var o = require("@api/request").WEB_BASE_URL;
 export default {

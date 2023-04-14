@@ -1,47 +1,44 @@
-var n = require('./request.js').request,
-    e = (require('./request.js').POSTBaseUrl, require('./request.js').POSTImageUrl, require('./request.js').requestTokenTimeExpires),
-    t = 'POST',
-    u = {
-        obtainCustomerCouponPage: function (e) {
-            return n(t, 'cust/coupon/v1/obtainCustomerCouponPage', e);
-        },
-        findCouponTrans: function (e) {
-            return n(t, 'cust/coupon/v1/findCouponTrans', e);
-        },
-        bind: function (e) {
-            return n(t, 'terminal/v1/bind', e);
-        },
-        aboutUsGetInfo: function (e) {
-            return n(t, 'pub/aboutUs/getInfo', e);
-        },
-        findBindAuditPage: function (e) {
-            return n(t, 'terminal/v1/findCustomerAuditPage', e);
-        },
-        unbindApply: function (e) {
-            return n(t, 'terminal/v1/unbindApply', e);
-        },
-        findPage: function (e) {
-            return n(t, 'terminal/v1/findPage', e);
-        },
-        getCaptcha: function (e) {
-            return n(t, 'pub/captcha/getCaptcha', e);
-        },
-        changePhoneSecurityCode: function (e) {
-            return n(t, 'cust/operator/v1/changePhoneSecurityCode', e);
-        },
-        changeCustPhone: function (e) {
-            return n(t, 'cust/operator/changeCustPhone', e);
-        },
-        custIncrInfoQuery: function (n) {
-            return e(t, 'cust/customerBase/custIncrInfoQuery', n);
-        },
-        saveCustPromoteQuota: function (e) {
-            return n(t, 'cust/bankCardBindRecord/saveCustPromoteQuota', e);
-        },
-        findCustExpandSwitch: function (e) {
-            return n(t, 'agent/v1/findCustExpandSwitch', e);
-        }
-    };
-module.exports = {
-    centerAPI: u
+import { request } from "./request"
+
+export const centerAPI = {
+    obtainCustomerCouponPage: function (data) {
+        return request('POST', 'cust/coupon/v1/obtainCustomerCouponPage', data);
+    },
+    findCouponTrans: function (data) {
+        return request('POST', 'cust/coupon/v1/findCouponTrans', data);
+    },
+    bind: function (data) {
+        return request('POST', 'terminal/v1/bind', data);
+    },
+    aboutUsGetInfo: function (data) {
+        return request('POST', 'pub/aboutUs/getInfo', data);
+    },
+    findBindAuditPage: function (data) {
+        return request('POST', 'terminal/v1/findCustomerAuditPage', data);
+    },
+    unbindApply: function (data) {
+        return request('POST', 'terminal/v1/unbindApply', data);
+    },
+    findPage: function (data) {
+        return request('POST', 'terminal/v1/findPage', data);
+    },
+    getCaptcha: function (data) {
+        return request('POST', 'pub/captcha/getCaptcha', data);
+    },
+    changePhoneSecurityCode: function (data) {
+        return request('POST', 'cust/operator/v1/changePhoneSecurityCode', data);
+    },
+    changeCustPhone: function (data) {
+        return request('POST', 'cust/operator/changeCustPhone', data);
+    },
+    custIncrInfoQuery: function (n) {
+        return request('POST', 'cust/customerBase/custIncrInfoQuery', n);
+    },
+    saveCustPromoteQuota: function (data) {
+        return request('POST', 'cust/bankCardBindRecord/saveCustPromoteQuota', data);
+    },
+    findCustExpandSwitch: function (data) {
+        return request('POST', 'agent/v1/findCustExpandSwitch', data);
+    }
 };
+

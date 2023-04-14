@@ -1,361 +1,356 @@
-var t = require('./request.js').request,
-    n = require('./request.js').POSTBaseUrl,
-    e = require('./request.js').POSTImageUrl,
-    u = require('./request.js').requestTokenTimeExpires,
-    r = 'POST',
-    o = {
-        POSTBaseUrl: function () {
-            return n();
-        },
-        POSTImageUrl: function () {
-            return e();
-        },
-        POSTEdiToken: function (n) {
-            return t(r, 'cust/faceRecognition/getEToken', n);
-        },
-        queryWxLogin: function (n) {
-            return t(r, 'cust/wxLogin', n);
-        },
-        queryCodeLogin: function (n) {
-            return t(r, 'cust/loginByCode', n);
-        },
-        queryBindAccontLogin: function (n) {
-            return t(r, 'cust/accountListByWx', n);
-        },
-        POSTCouponTranList: function (n) {
-            return t(r, 'cust/customer/POSTCouponTranList', n);
-        },
-        checkPassword: function (n) {
-            return t(r, 'cust/operator/v1/checkLoginPassword', n);
-        },
-        checkShowIdCardAndRegister: function (n) {
-            return t(r, 'cust/config', n);
-        },
-        queryCustLogin: function (n) {
-            return t(r, 'cust/login', n);
-        },
-        uploadImg: function (n) {
-            return t(r, 'pub/img/uploadImgWithoutAuth', n);
-        },
-        POSTAllTopBank: function (n) {
-            return t(r, 'sys/bankInfoHead/v1/likeByBankName', n);
-        },
-        POSTBankAddress: function (n) {
-            return t(r, 'areaInfo/findByBusinessType', n);
-        },
-        queryCustEditMccInfo: function (n) {
-            return t(r, 'cust/businessChange/queryCustMccTip', n);
-        },
-        queryFixMccInfo: function (n) {
-            return t(r, 'cust/custFee/updateAddress', n);
-        },
-        accountBal: function (n) {
-            return t(r, 'account/v1/accountTypeBalFromMini', n);
-        },
-        queryCustomerCount: function (n) {
-            return t(r, 'cust/customerBase/custCheckIdentity', n);
-        },
-        prepareCustWithdrawInfo: function (n) {
-            return t(r, 'withdraw/v1/prepareCustWithdrawInfo', n);
-        },
-        saveCustPromoteQuota: function (n) {
-            return t(r, 'cust/custPromoteQuota/saveCustPromoteQuota', n);
-        },
-        posBind: function (n) {
-            return t(r, 'cust/pos/bind', n);
-        },
-        findByCustNoAll: function (n) {
-            return t(r, 'cust/pos/findByCustNoAll', n);
-        },
-        posUnbind: function (n) {
-            return t(r, 'cust/pos/unbind', n);
-        },
-        findAgentByCust: function (n) {
-            return t(r, 'agent/v1/myExpandAgent', n);
-        },
-        queryCustQuestion: function (n) {
-            return t(r, 'sys/question/v1/page', n);
-        },
-        queryCustSysNotice: function (n) {
-            return t(r, 'sys/noticeInfo/v1/page', n);
-        },
-        queryCustPerNotice: function (n) {
-            return t(r, 'sys/sms/v1/page', n);
-        },
-        readAppNotice: function (n) {
-            return t(r, 'sys/noticeInfo/v1/read', n);
-        },
-        readPerNotice: function (n) {
-            return t(r, 'sys/sms/v1/read', n);
-        },
-        querymergeList: function (n) {
-            return t(r, 'cust/merge/unApply', n);
-        },
-        querymergePayList: function (n) {
-            return t(r, 'cust/merge/apply', n);
-        },
-        queryMergeHistoryList: function (n) {
-            return t(r, 'cust/merge/historySettleList', n);
-        },
-        queryMergeHistoryDetial: function (n) {
-            return t(r, 'cust/merge/historyDetail', n);
-        },
-        querySetAcountInfo: function (n) {
-            return t(r, 'cust/settle/findByCustomerNo', n);
-        },
-        POSTbranchBankList: function (n) {
-            return t(r, 'sys/bankInfoBranch/v1/listBankPoint', n);
-        },
-        queryRegisterCust: function (n) {
-            return t(r, 'cust/mini/selfIncr', n);
-        },
-        POSTAllareaInfo: function (n) {
-            return t(r, 'sys/areaInfo/v1/cascadeAll', n);
-        },
-        getWxOpenId: function (n) {
-            return t(r, 'cust/mini/getOpenId', n);
-        },
-        findAllProvince: function (n) {
-            return t(r, '/areaInfo/findAllProvince', n);
-        },
-        POSTCityDiqu: function (n) {
-            return t(r, 'areaInfo/findChildrenByParentCode', n);
-        },
-        POSTCustMcctype: function (n) {
-            return t(r, 'pub/transMcc/listMcc', n);
-        },
-        querySettleChange: function (n) {
-            return t(r, 'cust/businessChange/settleChange', n);
-        },
-        queryUpdateCustInfo: function (n) {
-            return t(r, 'cust/customerIncr/notifyAuthInfo', n);
-        },
-        queryFaceResult: function (n) {
-            return t(r, 'cust/customer/queryETokenResult', n);
-        },
-        queryFixCustDetailAddress: function (n) {
-            return t(r, 'cust/businessChange/updateCustAddr', n);
-        },
-        queryCustEditAreaInfo: function (n) {
-            return t(r, 'cust/businessChange/queryCustAddrTip', n);
-        },
-        queryChangeList: function (n) {
-            return t(r, 'cust/businessChange/findByPageAll', n);
-        },
-        queryAreaIsContainMcc: function (n) {
-            return t(r, 'cust/businessChange/updateCustAddrCheck', n);
-        },
-        queryCustAllInfo: function (t) {
-            return u(r, 'cust/customerBase/custIncrInfoQuery', t);
-        },
-        queryCustHomeFunc: function (n) {
-            return t(r, 'pub/appFunctionControl/controlFunction', n);
-        },
-        queryCustHomeBanner: function (n) {
-            return t(r, 'pub/appBanner/homeActiveAppBannerList', n);
-        },
-        queryCustHomeNotice: function (n) {
-            return t(r, 'sys/noticeInfo/v1/page', n);
-        },
-        queryCustShowYhq: function (n) {
-            return t(r, 'cust/custFee/fixedEstreat', n);
-        },
-        queryCusPosFirstTxConfig: function () {
-            return t('GET', 'cust/customer/posFirstTxConf');
-        },
-        queryCusVipInfo: function () {
-            return t(r, 'cust/vip/v1/vipInfo');
-        },
-        createFrozenPayment: function (n) {
-            return t(r, 'cust/vip/v1/createEleSignFrozen', n);
-        },
-        cancelFrozenPayment: function (n) {
-            return t(r, 'cust/vip/v1/cancelEleSignFrozen', n);
-        },
-        queryTransSettleDateInterval: function () {
-            return t(r, 'trans/v1/getTransTimeInterval');
-        },
-        queryTransOrderListNew: function (n) {
-            return t(r, 'trans/v1/page4Mini', n);
-        },
-        totalTransAmount: function (n) {
-            return t(r, 'trans/v1/total4Mini', n);
-        },
-        queryOrderDetail: function (n) {
-            return t(r, 'trans/detail', n);
-        },
-        queryTransTicket: function (n) {
-            return t(r, 'trans/sales/slip', n);
-        },
-        totalSettleAmount: function (n) {
-            return t(r, 'trans/settle/v1/total', n);
-        },
-        querySettleListNew: function (n) {
-            return t(r, 'trans/settle/v1/page', n);
-        },
-        querySettleDetails: function (n) {
-            return t(r, 'trans/settle/v1/detail', n);
-        },
-        modifyLoginPassword: function (n) {
-            return t(r, 'cust/operator/v1/modifyLoginPassword', n);
-        },
-        payPwdExist: function (n) {
-            return t(r, 'cust/account/payPwdExist', n);
-        },
-        preCalcFee: function (n) {
-            return t(r, 'cust/account/preCalcFee', n);
-        },
-        settPayPwdByLoginPassword: function (n) {
-            return t(r, 'account/v1/setPayPassword', n);
-        },
-        queryAccHis: function (n) {
-            return t(r, 'cust/account/queryAccHis', n);
-        },
-        queryAboutUs: function () {
-            return t(r, 'pub/aboutUs/POSTInfo');
-        },
-        queryHotline: function () {
-            return t(r, 'pub/aboutUs/hotline');
-        },
-        queryFeedbackOptions: function () {
-            return t(r, 'sys/suggestion/v1/suggestionType');
-        },
-        commitFeedbackData: function (n) {
-            return t(r, 'sys/suggestion/v1/save', n);
-        },
-        myFeedbackData: function (n) {
-            return t(r, 'sys/suggestion/v1/page', n);
-        },
-        queryCustLimitRate: function () {
-            return t(r, 'cust/custFee/queryCustomerFee');
-        },
-        queryLimitDetail: function (n) {
-            return t(r, 'cust/custFee/queryCustomerQuota', n);
-        },
-        withDraw: function (n) {
-            return t(r, 'cust/account/withDraw', n);
-        },
-        changeUsername: function (n) {
-            return t(r, 'cust/operator/changeUsername', n);
-        },
-        withdrawDetail: function (n) {
-            return t(r, 'cust/account/withdrawDetail', n);
-        },
-        updateArrivalMethodConfig: function (n) {
-            return t(r, 'cust/businessChange/arrivalMethod', n);
-        },
-        queryFixSettleTime: function (n) {
-            return t(r, 'cust/businessChange/settleTimeStatus', n);
-        },
-        POSTArrivalMethodNum: function () {
-            return t(r, 'cust/customerConfig/POSTArrivalMethodNum');
-        },
-        POSTWechatInfo: function (n) {
-            return t(r, 'cust/customerWechatIncr/POSTInfo', n);
-        },
-        updateCustAbbrName: function (n) {
-            return t(r, 'cust/customerIncr/updateCustAbbrName', n);
-        },
-        logout: function (n) {
-            return t(r, 'cust/logout', n);
-        },
-        checkCancleCustomer: function (n) {
-            return t(r, 'cust/customer/checkCancleCustomer', n);
-        },
-        cancelOperatorFromCust: function (n) {
-            return t(r, 'cust/customer/cancelOperatorFromCust', n);
-        },
-        POSTCustMgtConfig: function () {
-            return t(r, 'cust/customerConfig/POSTCustMgtConfig');
-        },
-        updateCustMgtSwitch: function (n) {
-            return t(r, 'cust/customerConfig/updateCustMgtSwitch', n);
-        },
-        POSTCustServiceChargeConfig: function () {
-            return t(r, 'cust/customerConfig/POSTCustServiceChargeConfig');
-        },
-        updateCustServiceChargeConfig: function (n) {
-            return t(r, 'cust/customerConfig/updateCustServiceChargeConfig', n);
-        },
-        getYhqEffect: function (n) {
-            return t(r, 'miniCustomerCoupon/v1/findCouponByYesEffectPage', n);
-        },
-        getYhqUseRecord: function (n) {
-            return t(r, 'miniCustomerCoupon/v1/findTransOrderCouponUsePage', n);
-        },
-        getHistoryYhq: function (n) {
-            return t(r, 'miniCustomerCoupon/v1/findCouponByLostEffectPage', n);
-        },
-        POSTCouponList: function (n) {
-            return t(r, 'cust/customer/POSTCouponList', n);
-        },
-        queryCustAccountList: function () {
-            return t(r, 'cust/custAccountList');
-        },
-        queryAccountListByWx: function (n) {
-            return t(r, 'cust/accountListByWx', n);
-        },
-        changeCustAccount: function (n) {
-            return t(r, 'cust/loginByCode', n);
-        },
-        unbindWx: function (n) {
-            return t(r, 'cust/unbindWx', n);
-        },
-        checkFaceHeadAuthentication: function (n) {
-            return t(r, 'cust/existsAccountsByIdNo', n);
-        },
-        checkFaceAfterAuthentication: function (n) {
-            return t(r, 'cust/custAccountListByFace', n);
-        },
-        checkwxrAccountExist: function (n) {
-            return t(r, 'cust/loginAndBind4wxNoPsw', n);
-        },
-        queryExpanderStatus: function () {
-            return t(r, 'cust/customerBase/POSTExpanderStatus');
-        },
-        loginToIndex: function (n) {
-            return t(r, 'cust/login', n);
-        },
-        loginAndBind4wx: function (n) {
-            return t(r, 'cust/loginAndBind4wx', n);
-        },
-        cancelfaceErrorCount: function (n) {
-            return t(r, 'cust/customer/POSTCancelfaceErrorCount', n);
-        },
-        checkDoubleRecord: function () {
-            return t(r, 'cust/customerBase/custCheckDoubleRecord');
-        },
-        getSignAgreementData: function (n) {
-            return t(r, 'cloud/doubleRecord/v1/authCheckLegality', n);
-        },
-        saveCheckSign: function (n) {
-            return t(r, 'cloud/doubleRecord/v1/saveAuthSignPromise', n);
-        },
-        getETokenParams: function (n) {
-            return t(r, 'cloud/doubleRecord/v1/getAuthDoubleRecordToken', n);
-        },
-        saveCheckFace: function (n) {
-            return t(r, 'cloud/doubleRecord/v1/getAuthDoubleRecordAndSave', n);
-        },
-        getTerSignAgreementData: function (n) {
-            return t(r, 'cloud/doubleRecord/v1/scanCheckLegality', n);
-        },
-        saveTerCheckSign: function (n) {
-            return t(r, 'cloud/doubleRecord/v1/saveScanSignPromise', n);
-        },
-        getTerETokenParams: function (n) {
-            return t(r, 'cloud/doubleRecord/v1/getScanDoubleRecordToken', n);
-        },
-        saveTerCheckFace: function (n) {
-            return t(r, 'cloud/doubleRecord/v1/getScanDoubleRecordAndSave', n);
-        },
-        queryMiniPremissions: function () {
-            return t(r, 'cust/custPremissions/queryMiniPremissions');
-        },
-        queryEntrance: function () {
-            return t(r, 'cust/custPremissions/entrance');
-        }
-    };
-module.exports = {
-    API: o
+import { request, POSTBaseUrl, POSTImageUrl, requestTokenTimeExpires } from "./request"
+
+export const API = {
+    POSTBaseUrl: function () {
+        return POSTBaseUrl();
+    },
+    POSTImageUrl: function () {
+        return POSTImageUrl();
+    },
+    POSTEdiToken: function (data) {
+        return request('POST', 'cust/faceRecognition/getEToken', data);
+    },
+    queryWxLogin: function (data) {
+        return request('POST', 'cust/wxLogin', data);
+    },
+    queryCodeLogin: function (data) {
+        return request('POST', 'cust/loginByCode', data);
+    },
+    queryBindAccontLogin: function (data) {
+        return request('POST', 'cust/accountListByWx', data);
+    },
+    POSTCouponTranList: function (data) {
+        return request('POST', 'cust/customer/POSTCouponTranList', data);
+    },
+    checkPassword: function (data) {
+        return request('POST', 'cust/operator/v1/checkLoginPassword', data);
+    },
+    checkShowIdCardAndRegister: function (data) {
+        return request('POST', 'cust/config', data);
+    },
+    queryCustLogin: function (data) {
+        return request('POST', 'cust/login', data);
+    },
+    uploadImg: function (data) {
+        return request('POST', 'pub/img/uploadImgWithoutAuth', data);
+    },
+    POSTAllTopBank: function (data) {
+        return request('POST', 'sys/bankInfoHead/v1/likeByBankName', data);
+    },
+    POSTBankAddress: function (data) {
+        return request('POST', 'areaInfo/findByBusinessType', data);
+    },
+    queryCustEditMccInfo: function (data) {
+        return request('POST', 'cust/businessChange/queryCustMccTip', data);
+    },
+    queryFixMccInfo: function (data) {
+        return request('POST', 'cust/custFee/updateAddress', data);
+    },
+    accountBal: function (data) {
+        return request('POST', 'account/v1/accountTypeBalFromMini', data);
+    },
+    queryCustomerCount: function (data) {
+        return request('POST', 'cust/customerBase/custCheckIdentity', data);
+    },
+    prepareCustWithdrawInfo: function (data) {
+        return request('POST', 'withdraw/v1/prepareCustWithdrawInfo', data);
+    },
+    saveCustPromoteQuota: function (data) {
+        return request('POST', 'cust/custPromoteQuota/saveCustPromoteQuota', data);
+    },
+    posBind: function (data) {
+        return request('POST', 'cust/pos/bind', data);
+    },
+    findByCustNoAll: function (data) {
+        return request('POST', 'cust/pos/findByCustNoAll', data);
+    },
+    posUnbind: function (data) {
+        return request('POST', 'cust/pos/unbind', data);
+    },
+    findAgentByCust: function (data) {
+        return request('POST', 'agent/v1/myExpandAgent', data);
+    },
+    queryCustQuestion: function (data) {
+        return request('POST', 'sys/question/v1/page', data);
+    },
+    queryCustSysNotice: function (data) {
+        return request('POST', 'sys/noticeInfo/v1/page', data);
+    },
+    queryCustPerNotice: function (data) {
+        return request('POST', 'sys/sms/v1/page', data);
+    },
+    readAppNotice: function (data) {
+        return request('POST', 'sys/noticeInfo/v1/read', data);
+    },
+    readPerNotice: function (data) {
+        return request('POST', 'sys/sms/v1/read', data);
+    },
+    querymergeList: function (data) {
+        return request('POST', 'cust/merge/unApply', data);
+    },
+    querymergePayList: function (data) {
+        return request('POST', 'cust/merge/apply', data);
+    },
+    queryMergeHistoryList: function (data) {
+        return request('POST', 'cust/merge/historySettleList', data);
+    },
+    queryMergeHistoryDetial: function (data) {
+        return request('POST', 'cust/merge/historyDetail', data);
+    },
+    querySetAcountInfo: function (data) {
+        return request('POST', 'cust/settle/findByCustomerNo', data);
+    },
+    POSTbranchBankList: function (data) {
+        return request('POST', 'sys/bankInfoBranch/v1/listBankPoint', data);
+    },
+    queryRegisterCust: function (data) {
+        return request('POST', 'cust/mini/selfIncr', data);
+    },
+    POSTAllareaInfo: function (data) {
+        return request('POST', 'sys/areaInfo/v1/cascadeAll', data);
+    },
+    getWxOpenId: function (data) {
+        return request('POST', 'cust/mini/getOpenId', data);
+    },
+    findAllProvince: function (data) {
+        return request('POST', '/areaInfo/findAllProvince', data);
+    },
+    POSTCityDiqu: function (data) {
+        return request('POST', 'areaInfo/findChildrenByParentCode', data);
+    },
+    POSTCustMcctype: function (data) {
+        return request('POST', 'pub/transMcc/listMcc', data);
+    },
+    querySettleChange: function (data) {
+        return request('POST', 'cust/businessChange/settleChange', data);
+    },
+    queryUpdateCustInfo: function (data) {
+        return request('POST', 'cust/customerIncr/notifyAuthInfo', data);
+    },
+    queryFaceResult: function (data) {
+        return request('POST', 'cust/customer/queryETokenResult', data);
+    },
+    queryFixCustDetailAddress: function (data) {
+        return request('POST', 'cust/businessChange/updateCustAddr', data);
+    },
+    queryCustEditAreaInfo: function (data) {
+        return request('POST', 'cust/businessChange/queryCustAddrTip', data);
+    },
+    queryChangeList: function (data) {
+        return request('POST', 'cust/businessChange/findByPageAll', data);
+    },
+    queryAreaIsContainMcc: function (data) {
+        return request('POST', 'cust/businessChange/updateCustAddrCheck', data);
+    },
+    queryCustAllInfo: function (request) {
+        return requestTokenTimeExpires('POST', 'cust/customerBase/custIncrInfoQuery', request);
+    },
+    queryCustHomeFunc: function (data) {
+        return request('POST', 'pub/appFunctionControl/controlFunction', data);
+    },
+    queryCustHomeBanner: function (data) {
+        return request('POST', 'pub/appBanner/homeActiveAppBannerList', data);
+    },
+    queryCustHomeNotice: function (data) {
+        return request('POST', 'sys/noticeInfo/v1/page', data);
+    },
+    queryCustShowYhq: function (data) {
+        return request('POST', 'cust/custFee/fixedEstreat', data);
+    },
+    queryCusPosFirstTxConfig: function () {
+        return request('GET', 'cust/customer/posFirstTxConf');
+    },
+    queryCusVipInfo: function () {
+        return request('POST', 'cust/vip/v1/vipInfo');
+    },
+    createFrozenPayment: function (data) {
+        return request('POST', 'cust/vip/v1/createEleSignFrozen', data);
+    },
+    cancelFrozenPayment: function (data) {
+        return request('POST', 'cust/vip/v1/cancelEleSignFrozen', data);
+    },
+    queryTransSettleDateInterval: function () {
+        return request('POST', 'trans/v1/getTransTimeInterval');
+    },
+    queryTransOrderListNew: function (data) {
+        return request('POST', 'trans/v1/page4Mini', data);
+    },
+    totalTransAmount: function (data) {
+        return request('POST', 'trans/v1/total4Mini', data);
+    },
+    queryOrderDetail: function (data) {
+        return request('POST', 'trans/detail', data);
+    },
+    queryTransTicket: function (data) {
+        return request('POST', 'trans/sales/slip', data);
+    },
+    totalSettleAmount: function (data) {
+        return request('POST', 'trans/settle/v1/total', data);
+    },
+    querySettleListNew: function (data) {
+        return request('POST', 'trans/settle/v1/page', data);
+    },
+    querySettleDetails: function (data) {
+        return request('POST', 'trans/settle/v1/detail', data);
+    },
+    modifyLoginPassword: function (data) {
+        return request('POST', 'cust/operator/v1/modifyLoginPassword', data);
+    },
+    payPwdExist: function (data) {
+        return request('POST', 'cust/account/payPwdExist', data);
+    },
+    preCalcFee: function (data) {
+        return request('POST', 'cust/account/preCalcFee', data);
+    },
+    settPayPwdByLoginPassword: function (data) {
+        return request('POST', 'account/v1/setPayPassword', data);
+    },
+    queryAccHis: function (data) {
+        return request('POST', 'cust/account/queryAccHis', data);
+    },
+    queryAboutUs: function () {
+        return request('POST', 'pub/aboutUs/POSTInfo');
+    },
+    queryHotline: function () {
+        return request('POST', 'pub/aboutUs/hotline');
+    },
+    queryFeedbackOptions: function () {
+        return request('POST', 'sys/suggestion/v1/suggestionType');
+    },
+    commitFeedbackData: function (data) {
+        return request('POST', 'sys/suggestion/v1/save', data);
+    },
+    myFeedbackData: function (data) {
+        return request('POST', 'sys/suggestion/v1/page', data);
+    },
+    queryCustLimitRate: function () {
+        return request('POST', 'cust/custFee/queryCustomerFee');
+    },
+    queryLimitDetail: function (data) {
+        return request('POST', 'cust/custFee/queryCustomerQuota', data);
+    },
+    withDraw: function (data) {
+        return request('POST', 'cust/account/withDraw', data);
+    },
+    changeUsername: function (data) {
+        return request('POST', 'cust/operator/changeUsername', data);
+    },
+    withdrawDetail: function (data) {
+        return request('POST', 'cust/account/withdrawDetail', data);
+    },
+    updateArrivalMethodConfig: function (data) {
+        return request('POST', 'cust/businessChange/arrivalMethod', data);
+    },
+    queryFixSettleTime: function (data) {
+        return request('POST', 'cust/businessChange/settleTimeStatus', data);
+    },
+    POSTArrivalMethodNum: function () {
+        return request('POST', 'cust/customerConfig/POSTArrivalMethodNum');
+    },
+    POSTWechatInfo: function (data) {
+        return request('POST', 'cust/customerWechatIncr/POSTInfo', data);
+    },
+    updateCustAbbrName: function (data) {
+        return request('POST', 'cust/customerIncr/updateCustAbbrName', data);
+    },
+    logout: function (data) {
+        return request('POST', 'cust/logout', data);
+    },
+    checkCancleCustomer: function (data) {
+        return request('POST', 'cust/customer/checkCancleCustomer', data);
+    },
+    cancelOperatorFromCust: function (data) {
+        return request('POST', 'cust/customer/cancelOperatorFromCust', data);
+    },
+    POSTCustMgtConfig: function () {
+        return request('POST', 'cust/customerConfig/POSTCustMgtConfig');
+    },
+    updateCustMgtSwitch: function (data) {
+        return request('POST', 'cust/customerConfig/updateCustMgtSwitch', data);
+    },
+    POSTCustServiceChargeConfig: function () {
+        return request('POST', 'cust/customerConfig/POSTCustServiceChargeConfig');
+    },
+    updateCustServiceChargeConfig: function (data) {
+        return request('POST', 'cust/customerConfig/updateCustServiceChargeConfig', data);
+    },
+    getYhqEffect: function (data) {
+        return request('POST', 'miniCustomerCoupon/v1/findCouponByYesEffectPage', data);
+    },
+    getYhqUseRecord: function (data) {
+        return request('POST', 'miniCustomerCoupon/v1/findTransOrderCouponUsePage', data);
+    },
+    getHistoryYhq: function (data) {
+        return request('POST', 'miniCustomerCoupon/v1/findCouponByLostEffectPage', data);
+    },
+    POSTCouponList: function (data) {
+        return request('POST', 'cust/customer/POSTCouponList', data);
+    },
+    queryCustAccountList: function () {
+        return request('POST', 'cust/custAccountList');
+    },
+    queryAccountListByWx: function (data) {
+        return request('POST', 'cust/accountListByWx', data);
+    },
+    changeCustAccount: function (data) {
+        return request('POST', 'cust/loginByCode', data);
+    },
+    unbindWx: function (data) {
+        return request('POST', 'cust/unbindWx', data);
+    },
+    checkFaceHeadAuthentication: function (data) {
+        return request('POST', 'cust/existsAccountsByIdNo', data);
+    },
+    checkFaceAfterAuthentication: function (data) {
+        return request('POST', 'cust/custAccountListByFace', data);
+    },
+    checkwxrAccountExist: function (data) {
+        return request('POST', 'cust/loginAndBind4wxNoPsw', data);
+    },
+    queryExpanderStatus: function () {
+        return request('POST', 'cust/customerBase/POSTExpanderStatus');
+    },
+    loginToIndex: function (data) {
+        return request('POST', 'cust/login', data);
+    },
+    loginAndBind4wx: function (data) {
+        return request('POST', 'cust/loginAndBind4wx', data);
+    },
+    cancelfaceErrorCount: function (data) {
+        return request('POST', 'cust/customer/POSTCancelfaceErrorCount', data);
+    },
+    checkDoubleRecord: function () {
+        return request('POST', 'cust/customerBase/custCheckDoubleRecord');
+    },
+    getSignAgreementData: function (data) {
+        return request('POST', 'cloud/doubleRecord/v1/authCheckLegality', data);
+    },
+    saveCheckSign: function (data) {
+        return request('POST', 'cloud/doubleRecord/v1/saveAuthSignPromise', data);
+    },
+    getETokenParams: function (data) {
+        return request('POST', 'cloud/doubleRecord/v1/getAuthDoubleRecordToken', data);
+    },
+    saveCheckFace: function (data) {
+        return request('POST', 'cloud/doubleRecord/v1/getAuthDoubleRecordAndSave', data);
+    },
+    getTerSignAgreementData: function (data) {
+        return request('POST', 'cloud/doubleRecord/v1/scanCheckLegality', data);
+    },
+    saveTerCheckSign: function (data) {
+        return request('POST', 'cloud/doubleRecord/v1/saveScanSignPromise', data);
+    },
+    getTerETokenParams: function (data) {
+        return request('POST', 'cloud/doubleRecord/v1/getScanDoubleRecordToken', data);
+    },
+    saveTerCheckFace: function (data) {
+        return request('POST', 'cloud/doubleRecord/v1/getScanDoubleRecordAndSave', data);
+    },
+    queryMiniPremissions: function () {
+        return request('POST', 'cust/custPremissions/queryMiniPremissions');
+    },
+    queryEntrance: function () {
+        return request('POST', 'cust/custPremissions/entrance');
+    }
 };
+
