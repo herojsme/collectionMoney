@@ -68,7 +68,7 @@ export default {
         clickChageList: function () {
             console.log('点击了变更记录');
             uni.navigateTo({
-                url: 'pages/infoChange/addressFix/addressFixList/addressFixList'
+                url: '/pages/infoChange/addressFix/addressFixList/addressFixList'
             });
         },
 

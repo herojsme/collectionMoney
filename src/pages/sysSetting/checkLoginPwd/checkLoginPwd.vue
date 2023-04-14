@@ -39,7 +39,7 @@ export default {
                 console.log(n);
                 if (200 == n.code) {
                     uni.navigateTo({
-                        url: 'pages/sysSetting/setPayPwd/setPayPwd?loginPwd='.concat(that.loginPwd)
+                        url: '/pages/sysSetting/setPayPwd/setPayPwd?loginPwd='.concat(that.loginPwd)
                     });
                 } else {
                     uni.showToast({

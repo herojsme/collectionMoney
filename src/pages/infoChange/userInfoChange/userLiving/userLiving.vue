@@ -33,7 +33,7 @@ export default {
     methods: {
         clickFaceScan: function () {
             uni.navigateTo({
-                url: 'pages/infoChange/addressFix/addressFixSuccess/addressFixSuccess?message=信息提交完成，等待运营人员审核&navigationTitle=活体验证'
+                url: '/pages/infoChange/addressFix/addressFixSuccess/addressFixSuccess?message=信息提交完成，等待运营人员审核&navigationTitle=活体验证'
             });
         }
     }

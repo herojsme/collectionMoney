@@ -20,11 +20,10 @@ if ('develop' === envVersion) {
 
 
 const responseInterceptor = (resolve, reject, response) => {
-    // console.log('responseInterceptor', response)
+    console.log('responseInterceptor', response)
     const res = response.data
     if (response && typeof response === 'object') {
-        if (98 == sData.data.code && '1001' == sData.data.failCode) {
-            console.log(sData)
+        if (res && 98 == res.code && '1001' == res.data.failCode) {
             uni.showToast({
                 title: '未登录或登录超时',
                 icon: 'none',
@@ -80,7 +79,7 @@ module.exports = {
                             header: header,
                             method: method,
                             timeout: 0,
-                           
+
                             complete: function (response) {
                                 responseInterceptor(resolve, reject, response)
                                 uni.hideLoading();
@@ -97,7 +96,7 @@ module.exports = {
                 title: '加载中',
                 mask: !0
             }),
-            new Promise(function (resolve, i) {
+            new Promise(function (resolve, reject) {
                 uni.getBackgroundFetchToken({
                     complete: function (res) {
                         console.log('登录的账号 = ', res.token);

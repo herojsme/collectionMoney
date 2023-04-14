@@ -23,7 +23,7 @@
         }
     },
     "condition": {},
-    "miniprogramRoot": "dist/build/mp-weixin/",
+    "miniprogramRoot": "dist/dev/mp-weixin/",
     "editorSetting": {
         "tabIndent": "insertSpaces",
         "tabSize": 4

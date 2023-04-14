@@ -147,7 +147,7 @@ export default {
                         fileType: 'png',
                         success: function (e) {
                             uni.redirectTo({
-                                url: 'pages/pos/terRecord/terCommitmentletter/terCommitmentletter?legalKey='
+                                url: '/pages/pos/terRecord/terCommitmentletter/terCommitmentletter?legalKey='
                                     .concat(encodeURIComponent(that.legalKey), '&base64Path=')
                                     .concat(encodeURIComponent(uni.getFileSystemManager().readFileSync(e.tempFilePath, 'base64')))
                             });

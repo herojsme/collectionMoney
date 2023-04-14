@@ -1,9 +1,16 @@
 {
   "compilerOptions": {
-    "types": [
-      "@dcloudio/types",
-      "miniprogram-api-typings",
-      "mini-types"
-    ]
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@api/*": ["src/api/*"],
+      "@c/*": ["src/components/*"],
+      "@wc/*": ["src/wxcomponents"],
+      "@a/*": ["src/assets/*"],
+      "@s/*": ["src/styles/*"],
+      "@u/*": ["src/utils/*"],
+      "@p/*": ["src/pages/*"]
+    },
+    "types": ["@dcloudio/types", "miniprogram-api-typings", "mini-types"]
   }
 }

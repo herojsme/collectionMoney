@@ -129,7 +129,7 @@ export default {
 
         jumpSignPage: function () {
             uni.reLaunch({
-                url: 'pages/pos/terRecord/terCanvas/terCanvas?legalKey='.concat(encodeURIComponent(this.legalKey), '&customerName=').concat(this.customerName)
+                url: '/pages/pos/terRecord/terCanvas/terCanvas?legalKey='.concat(encodeURIComponent(this.legalKey), '&customerName=').concat(this.customerName)
             });
         },
 
@@ -148,7 +148,7 @@ export default {
                         signaturePath: ''
                     });
                     uni.navigateTo({
-                        url: 'pages/pos/terRecord/terFaceCheck/terFaceCheck?legalKey='.concat(encodeURIComponent(e.object), '&customerNo=').concat(that.customerNo)
+                        url: '/pages/pos/terRecord/terFaceCheck/terFaceCheck?legalKey='.concat(encodeURIComponent(e.object), '&customerNo=').concat(that.customerNo)
                     });
                     that.queryAgreementSign();
                 } else {

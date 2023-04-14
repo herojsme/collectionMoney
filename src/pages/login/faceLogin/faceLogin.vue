@@ -133,7 +133,7 @@ export default {
                                 JSON.stringify(c);
                                 uni.setStorageSync('accountList', c);
                                 uni.navigateTo({
-                                    url: 'pages/login/accontIdCardSelect/accontIdCardSelect?userCode='.concat(n)
+                                    url: '/pages/login/accontIdCardSelect/accontIdCardSelect?userCode='.concat(n)
                                 });
                             } else if (1 === c.length) {
                                 var i = c[0].username;
@@ -145,7 +145,7 @@ export default {
                                 that.getCheckwxrAccountExist();
                             } else {
                                 uni.navigateTo({
-                                    url: 'pages/login/accontRegister/accontRegister'
+                                    url: '/pages/login/accontRegister/accontRegister'
                                 });
                             }
                         } else {
@@ -160,7 +160,7 @@ export default {
                                     e.confirm ||
                                         (e.cancel &&
                                             uni.navigateTo({
-                                                url: 'pages/login/accontLogin/accontLogin'
+                                                url: '/pages/login/accontLogin/accontLogin'
                                             }));
                                 }
                             });

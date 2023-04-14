@@ -3513,13 +3513,13 @@ define(
                               }
                           })
                         : uni.navigateTo({
-                              url: 'pages/login/index/index'
+                              url: '/pages/login/index/index'
                           });
                 },
 
                 aboutUs: function () {
                     uni.navigateTo({
-                        url: 'pages/sysSetting/aboutus/aboutus'
+                        url: '/pages/sysSetting/aboutus/aboutus'
                     });
                 },
 
@@ -3542,7 +3542,7 @@ define(
                     return (
                         0 != this.islogin ||
                         (uni.navigateTo({
-                            url: 'pages/login/index/index'
+                            url: '/pages/login/index/index'
                         }),
                         !1)
                     );
@@ -3551,28 +3551,28 @@ define(
                 fixPassword: function () {
                     this.judgeLogin() &&
                         uni.navigateTo({
-                            url: 'pages/sysSetting/changeLoginPwd/changeLoginPwd'
+                            url: '/pages/sysSetting/changeLoginPwd/changeLoginPwd'
                         });
                 },
 
                 clickForgetPassword: function () {
                     this.judgeLogin() &&
                         uni.navigateTo({
-                            url: 'pages/sysSetting/checkLoginPwd/checkLoginPwd'
+                            url: '/pages/sysSetting/checkLoginPwd/checkLoginPwd'
                         });
                 },
 
                 fixPhoneNum: function () {
                     this.judgeLogin() &&
                         uni.navigateTo({
-                            url: 'pages/sysSetting/changetTelephone/changetTelephone'
+                            url: '/pages/sysSetting/changetTelephone/changetTelephone'
                         });
                 },
 
                 clickAccontChange: function () {
                     this.judgeLogin() &&
                         uni.navigateTo({
-                            url: 'pages/sysSetting/changeAccount/changeAccount'
+                            url: '/pages/sysSetting/changeAccount/changeAccount'
                         });
                 },
 
@@ -3800,7 +3800,7 @@ define(
                         console.log(n),
                             200 == n.code
                                 ? uni.navigateTo({
-                                      url: 'pages/sysSetting/setPayPwd/setPayPwd?loginPwd='.concat(t.loginPwd)
+                                      url: '/pages/sysSetting/setPayPwd/setPayPwd?loginPwd='.concat(t.loginPwd)
                                   })
                                 : uni.showToast({
                                       title: '请输入正确的登录密码',
@@ -3818,7 +3818,7 @@ define(
                             this.pwdVal.length >= 6
                                 ? (console.log('输入的支付密码', this.pwdVal),
                                   void uni.navigateTo({
-                                      url: 'pages/sysSetting/setPayPwdAgain/setPayPwdAgain?pwdval='.concat(this.pwdVal, '&loginPwd=').concat(this.loginPwd)
+                                      url: '/pages/sysSetting/setPayPwdAgain/setPayPwdAgain?pwdval='.concat(this.pwdVal, '&loginPwd=').concat(this.loginPwd)
                                   }))
                                 : void 0
                         );
@@ -3855,7 +3855,7 @@ define(
                                             success: function (t) {
                                                 t.confirm &&
                                                     uni.redirectTo({
-                                                        url: 'pages/sysSetting/setPayPwd/setPayPwd?loginPwd='.concat(n.loginPwd)
+                                                        url: '/pages/sysSetting/setPayPwd/setPayPwd?loginPwd='.concat(n.loginPwd)
                                                     });
                                             }
                                         }))

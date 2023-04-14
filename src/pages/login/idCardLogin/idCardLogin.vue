@@ -61,7 +61,7 @@ export default {
             });
         } else {
             uni.navigateTo({
-                url: 'pages/login/accontLogin/accontLogin'
+                url: '/pages/login/accontLogin/accontLogin'
             });
         }
     },
@@ -78,7 +78,7 @@ export default {
                 } else {
                     if (this.idCardName) {
                         uni.navigateTo({
-                            url: 'pages/login/faceLogin/faceLogin?idcard=' + this.idCardnumber + '&idName=' + this.idCardName
+                            url: '/pages/login/faceLogin/faceLogin?idcard=' + this.idCardnumber + '&idName=' + this.idCardName
                         });
                     } else {
                         uni.showToast({
@@ -98,14 +98,14 @@ export default {
         clickAccontLogin: function () {
             console.log('账号登录');
             uni.navigateTo({
-                url: 'pages/login/accontLogin/accontLogin'
+                url: '/pages/login/accontLogin/accontLogin'
             });
         },
 
         clickRegisterAccont: function () {
             console.log('注册');
             uni.navigateTo({
-                url: 'pages/login/accontRegister/accontRegister'
+                url: '/pages/login/accontRegister/accontRegister'
             });
         },
 

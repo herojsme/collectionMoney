@@ -264,16 +264,10 @@
 </template>
 
 <script>
-// import vanIcon from '@wc/vantWeapp/icon/index';
-// import vanPopup from '@wc/vantWeapp/popup/index';
-// import vanCheckbox from '@wc/vantWeapp/checkbox/index';
-// import vanImage from '@wc/vantWeapp/image/index';
-var t = require("@api/api").API;
 import { API } from "@api/api";
+import { WEB_BASE_URL } from "@api/request";
 
-console.log("API", API);
 var app = getApp();
-var o = require("@api/request").WEB_BASE_URL;
 export default {
   // components: {
   //     vanIcon,
@@ -292,7 +286,7 @@ export default {
       bindFlag: false,
       chargeFlag: false,
       singShare: false,
-      isLoginStatus: false,
+      isLoginStatus: true,
       custInfo: {},
 
       optionList: [
@@ -300,37 +294,37 @@ export default {
           img: "https://www.krppay.com/skb_assets/fast_arrival_icon.png",
           desc: "快速到账",
           show: false,
-          url: "pages/infoChange/debitCard/commit/commit",
+          url: "/pages/infoChange/debitCard/commit/commit",
         },
         {
           img: "https://www.krppay.com/skb_assets/home_option_jiesuan.png",
           desc: "结算信息",
           show: true,
-          url: "pages/infoChange/jieSuanChange/jieSuanChange",
+          url: "/pages/infoChange/jieSuanChange/jieSuanChange",
         },
         {
           img: "https://www.krppay.com/skb_assets/home_option_hangye.png",
           desc: "行业信息",
           show: true,
-          url: "pages/infoChange/industryType/index/index",
+          url: "/pages/infoChange/industryType/index/index",
         },
         {
           img: "https://www.krppay.com/skb_assets/home_option_address.png",
           desc: "地址信息",
           show: true,
-          url: "pages/infoChange/addressFix/address/address",
+          url: "/pages/infoChange/addressFix/address/address",
         },
         {
           img: "https://www.krppay.com/skb_assets/home_icon_acconttype.png",
           desc: "到账方式",
           show: false,
-          url: "pages/infoChange/mergeAccont/mergeAccontFix/mergeAccontFix",
+          url: "/pages/infoChange/mergeAccont/mergeAccontFix/mergeAccontFix",
         },
         {
           img: "https://www.krppay.com/skb_assets/home_option_fenshi.png",
           desc: "分时结算",
           show: false,
-          url: "pages/infoChange/timeSettlement/timeSettlement",
+          url: "/pages/infoChange/timeSettlement/timeSettlement",
         },
       ],
 
@@ -362,21 +356,21 @@ export default {
   onReady: function () {},
   onShow: function () {
     var that = this;
-    t.queryCustAllInfo().then(function (t) {
+    API.queryCustAllInfo().then(function (t) {
       var o = t.isLoginStatus;
       console.log("islogin =", o);
-      if (1 == o) {
-        that.queryCustAllInfo();
-        that.queryCustHomeNotice();
-        that.queryCustHomeBanner();
-        that.queryMiniPremissions();
-        that.queryEntrance();
-      } else {
-        console.log("未登录不做处理");
-      }
-      that.setData({
-        isLoginStatus: o,
-      });
+      // if (1 == o) {
+      //   that.queryCustAllInfo();
+      //   that.queryCustHomeNotice();
+      //   that.queryCustHomeBanner();
+      //   that.queryMiniPremissions();
+      //   that.queryEntrance();
+      // } else {
+      //   console.log("未登录不做处理");
+      // }
+      // that.setData({
+      //   isLoginStatus: o,
+      // });
     });
   },
   onShareAppMessage: function () {
@@ -398,6 +392,11 @@ export default {
     };
   },
   methods: {
+    setData(opt) {
+      Object.keys(opt).forEach((el) => {
+        this.el = opt[el];
+      });
+    },
     scrollowLeft: function () {
       console.log("触发左边");
       this.setData({
@@ -413,9 +412,9 @@ export default {
     },
 
     clickOption: function (t) {
-      if (0 == this.isLoginStatus) {
+      if (!this.isLoginStatus) {
         uni.navigateTo({
-          url: "pages/login/index/index",
+          url: "/pages/login/index/index",
         });
         return true;
       }
@@ -426,21 +425,21 @@ export default {
     },
 
     clickMassge: function () {
-      if (0 == this.isLoginStatus) {
+      if (!this.isLoginStatus) {
         uni.navigateTo({
-          url: "pages/login/index/index",
+          url: "/pages/login/index/index",
         });
         return true;
       }
       uni.navigateTo({
-        url: "pages/notice/noticeList/noticeList",
+        url: "/pages/notice/noticeList/noticeList",
       });
     },
 
     clickYhq: function () {
-      if (0 == this.isLoginStatus) {
+      if (!this.isLoginStatus) {
         uni.navigateTo({
-          url: "pages/login/index/index",
+          url: "/pages/login/index/index",
         });
         return true;
       }
@@ -452,7 +451,10 @@ export default {
             uni.navigateTo({
               url: "/toolsBox/webview/webview?url=".concat(
                 encodeURIComponent(
-                  o + "withdrawalFeeCoupon?token=" + e + "&source=WLP"
+                  WEB_BASE_URL +
+                    "withdrawalFeeCoupon?token=" +
+                    e +
+                    "&source=WLP"
                 )
               ),
             });
@@ -461,9 +463,9 @@ export default {
     },
 
     eventShareHint: function () {
-      if (0 == this.isLoginStatus) {
+      if (!this.isLoginStatus) {
         uni.navigateTo({
-          url: "pages/login/index/index",
+          url: "/pages/login/index/index",
         });
         return true;
       }
@@ -496,7 +498,7 @@ export default {
 
     queryEntrance: function () {
       var that = this;
-      t.queryEntrance().then(function (t) {
+      API.queryEntrance().then(function (t) {
         if (200 == t.code) {
           that.updateListState(
             "快速到账",
@@ -514,9 +516,9 @@ export default {
       /* ---处理dataset begin--- */
       this.handleDataset(t, _dataset);
       /* ---处理dataset end--- */
-      if (0 == this.isLoginStatus) {
+      if (!this.isLoginStatus) {
         uni.navigateTo({
-          url: "pages/login/index/index",
+          url: "/pages/login/index/index",
         });
         return true;
       }
@@ -532,7 +534,7 @@ export default {
     queryCustHomeNotice: function () {
       var that = this;
       var o = this;
-      t.queryCustHomeNotice({
+      API.queryCustHomeNotice({
         pageNo: 1,
         pageSize: 10,
       }).then(function (t) {
@@ -578,7 +580,7 @@ export default {
 
     queryMiniPremissions: function () {
       var that = this;
-      t.queryMiniPremissions().then(function (t) {
+      API.queryMiniPremissions().then(function (t) {
         if (200 == t.code) {
           that.setData({
             bindFlag: t.object.bindFlag || false,
@@ -590,7 +592,7 @@ export default {
 
     queryShowYhq: function () {
       var that = this;
-      t.queryCustShowYhq({
+      API.queryCustShowYhq({
         customerNo: this.custInfo.customerNo,
       }).then(function (t) {
         console.log("yhq = res =", t);
@@ -604,7 +606,7 @@ export default {
 
     queryCustAllInfo: function () {
       var that = this;
-      t.queryCustAllInfo().then(function (t) {
+      API.queryCustAllInfo().then(function (t) {
         console.log("custInfo = ", t.object);
         if (200 == t.code) {
           getApp().globalData.custInfo = t.object;
@@ -639,7 +641,7 @@ export default {
 
     queryCustHomeBanner: function () {
       var that = this;
-      t.queryCustHomeBanner({
+      API.queryCustHomeBanner({
         pageNo: 1,
         pageSize: 10,
         position: "RMHD",

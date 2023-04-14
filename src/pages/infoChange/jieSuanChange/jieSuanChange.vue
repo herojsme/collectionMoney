@@ -46,7 +46,7 @@ export default {
         clickFix: function () {
             console.log('修改');
             uni.navigateTo({
-                url: 'pages/infoChange/jieSuanFixList/jieSuanFixList?bankInfo'
+                url: '/pages/infoChange/jieSuanFixList/jieSuanFixList?bankInfo'
             });
         },
 

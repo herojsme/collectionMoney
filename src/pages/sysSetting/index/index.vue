@@ -121,14 +121,14 @@ export default {
                 });
             } else {
                 uni.navigateTo({
-                    url: 'pages/login/index/index'
+                    url: '/pages/login/index/index'
                 });
             }
         },
 
         aboutUs: function () {
             uni.navigateTo({
-                url: 'pages/sysSetting/aboutus/aboutus'
+                url: '/pages/sysSetting/aboutus/aboutus'
             });
         },
 
@@ -153,7 +153,7 @@ export default {
             return (
                 0 != this.islogin ||
                 (uni.navigateTo({
-                    url: 'pages/login/index/index'
+                    url: '/pages/login/index/index'
                 }),
                 false)
             );
@@ -162,7 +162,7 @@ export default {
         fixPassword: function () {
             if (this.judgeLogin()) {
                 uni.navigateTo({
-                    url: 'pages/sysSetting/changeLoginPwd/changeLoginPwd'
+                    url: '/pages/sysSetting/changeLoginPwd/changeLoginPwd'
                 });
             }
         },
@@ -170,7 +170,7 @@ export default {
         clickForgetPassword: function () {
             if (this.judgeLogin()) {
                 uni.navigateTo({
-                    url: 'pages/sysSetting/checkLoginPwd/checkLoginPwd'
+                    url: '/pages/sysSetting/checkLoginPwd/checkLoginPwd'
                 });
             }
         },
@@ -178,7 +178,7 @@ export default {
         fixPhoneNum: function () {
             if (this.judgeLogin()) {
                 uni.navigateTo({
-                    url: 'pages/sysSetting/changetTelephone/changetTelephone'
+                    url: '/pages/sysSetting/changetTelephone/changetTelephone'
                 });
             }
         },
@@ -186,7 +186,7 @@ export default {
         clickAccontChange: function () {
             if (this.judgeLogin()) {
                 uni.navigateTo({
-                    url: 'pages/sysSetting/changeAccount/changeAccount'
+                    url: '/pages/sysSetting/changeAccount/changeAccount'
                 });
             }
         },

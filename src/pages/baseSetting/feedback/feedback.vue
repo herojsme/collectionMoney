@@ -104,7 +104,7 @@ export default {
                                                     icon: 'none'
                                                 });
                                                 uni.redirectTo({
-                                                    url: 'pages/baseSetting/myFeedback/myFeedback'
+                                                    url: '/pages/baseSetting/myFeedback/myFeedback'
                                                 });
                                             } else {
                                                 uni.showToast({
@@ -131,7 +131,7 @@ export default {
                 }
             } else {
                 uni.navigateTo({
-                    url: 'pages/login/index/index'
+                    url: '/pages/login/index/index'
                 });
             }
         },
@@ -145,11 +145,11 @@ export default {
         skipMyFeedback: function () {
             if (0 != this.isLoginStatus) {
                 uni.navigateTo({
-                    url: 'pages/baseSetting/myFeedback/myFeedback'
+                    url: '/pages/baseSetting/myFeedback/myFeedback'
                 });
             } else {
                 uni.navigateTo({
-                    url: 'pages/login/index/index'
+                    url: '/pages/login/index/index'
                 });
             }
         },

@@ -140,7 +140,7 @@ export default {
                         fileType: 'png',
                         success: function (t) {
                             uni.redirectTo({
-                                url: 'pages/pos/commitmentletter/commitmentletter?base64Path='.concat(
+                                url: '/pages/pos/commitmentletter/commitmentletter?base64Path='.concat(
                                     encodeURIComponent(uni.getFileSystemManager().readFileSync(t.tempFilePath, 'base64'))
                                 )
                             });

@@ -543,7 +543,7 @@ export default {
             var a = e.target.dataset.rowtitle;
             if ('开户行' == a)
                 uni.navigateTo({
-                    url: 'pages/login/accontRegister/bank/bank'
+                    url: '/pages/login/accontRegister/bank/bank'
                 });
             else if ('开户支行' == a) {
                 if ('' == this.bankCode.length) {
@@ -559,7 +559,7 @@ export default {
                     });
                 }
                 uni.navigateTo({
-                    url: 'pages/login/accontRegister/alliedBank/alliedBank?bankCode=' + this.bankCode + '&areaCode=' + this.areaCode
+                    url: '/pages/login/accontRegister/alliedBank/alliedBank?bankCode=' + this.bankCode + '&areaCode=' + this.areaCode
                 });
             } else {
                 if ('开户行所在地' == a) {
@@ -581,7 +581,7 @@ export default {
         onClickHyYtypeRow: function () {
             if ('' != this.jyareaDiquCode) {
                 uni.navigateTo({
-                    url: 'pages/login/accontRegister/hangyetype/hangyetype?area=' + this.jyareaDiquCode
+                    url: '/pages/login/accontRegister/hangyetype/hangyetype?area=' + this.jyareaDiquCode
                 });
             } else {
                 uni.showToast({

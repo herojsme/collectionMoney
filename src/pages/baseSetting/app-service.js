@@ -2320,7 +2320,7 @@ define(
                                                                     icon: 'none'
                                                                 }),
                                                                 uni.redirectTo({
-                                                                    url: 'pages/baseSetting/myFeedback/myFeedback'
+                                                                    url: '/pages/baseSetting/myFeedback/myFeedback'
                                                                 }))
                                                               : uni.showToast({
                                                                     title: t.message,
@@ -2341,7 +2341,7 @@ define(
                               });
                     } else
                         uni.navigateTo({
-                            url: 'pages/login/index/index'
+                            url: '/pages/login/index/index'
                         });
                 },
 
@@ -2354,10 +2354,10 @@ define(
                 skipMyFeedback: function () {
                     0 != this.isLoginStatus
                         ? uni.navigateTo({
-                              url: 'pages/baseSetting/myFeedback/myFeedback'
+                              url: '/pages/baseSetting/myFeedback/myFeedback'
                           })
                         : uni.navigateTo({
-                              url: 'pages/login/index/index'
+                              url: '/pages/login/index/index'
                           });
                 },
 

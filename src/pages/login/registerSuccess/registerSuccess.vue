@@ -82,7 +82,7 @@ export default {
                 }
             } else {
                 uni.redirectTo({
-                    url: 'pages/login/idCardLogin/idCardLogin?idCardnumber=' + this.idcardNumber + '&idCardName=' + this.idcardUserName
+                    url: '/pages/login/idCardLogin/idCardLogin?idCardnumber=' + this.idcardNumber + '&idCardName=' + this.idcardUserName
                 });
             }
         }

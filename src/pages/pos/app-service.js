@@ -2804,7 +2804,7 @@ define(
 
                 toHistory: function () {
                     uni.navigateTo({
-                        url: 'pages/pos/historyList/historyList'
+                        url: '/pages/pos/historyList/historyList'
                     });
                 },
 
@@ -3031,7 +3031,7 @@ define(
                                   fileType: 'png',
                                   success: function (t) {
                                       uni.redirectTo({
-                                          url: 'pages/pos/commitmentletter/commitmentletter?base64Path='.concat(
+                                          url: '/pages/pos/commitmentletter/commitmentletter?base64Path='.concat(
                                               encodeURIComponent(uni.getFileSystemManager().readFileSync(t.tempFilePath, 'base64'))
                                           )
                                       });
@@ -3082,7 +3082,7 @@ define(
 
                 jumpSignPage: function () {
                     uni.reLaunch({
-                        url: 'pages/pos/canvas/canvas?customerName='.concat(this.customerName)
+                        url: '/pages/pos/canvas/canvas?customerName='.concat(this.customerName)
                     });
                 },
 
@@ -3098,7 +3098,7 @@ define(
                                   signaturePath: ''
                               }),
                               uni.navigateTo({
-                                  url: 'pages/pos/faceCheck/faceCheck'
+                                  url: '/pages/pos/faceCheck/faceCheck'
                               }),
                               t.queryAgreementSign())
                             : e.message &&
@@ -3293,7 +3293,7 @@ define(
                                   fileType: 'png',
                                   success: function (e) {
                                       uni.redirectTo({
-                                          url: 'pages/pos/terRecord/terCommitmentletter/terCommitmentletter?legalKey='
+                                          url: '/pages/pos/terRecord/terCommitmentletter/terCommitmentletter?legalKey='
                                               .concat(encodeURIComponent(t.legalKey), '&base64Path=')
                                               .concat(encodeURIComponent(uni.getFileSystemManager().readFileSync(e.tempFilePath, 'base64')))
                                       });
@@ -3351,7 +3351,7 @@ define(
 
                 jumpSignPage: function () {
                     uni.reLaunch({
-                        url: 'pages/pos/terRecord/terCanvas/terCanvas?legalKey='.concat(encodeURIComponent(this.legalKey), '&customerName=').concat(this.customerName)
+                        url: '/pages/pos/terRecord/terCanvas/terCanvas?legalKey='.concat(encodeURIComponent(this.legalKey), '&customerName=').concat(this.customerName)
                     });
                 },
 
@@ -3370,7 +3370,7 @@ define(
                                           signaturePath: ''
                                       }),
                                       uni.navigateTo({
-                                          url: 'pages/pos/terRecord/terFaceCheck/terFaceCheck?legalKey='.concat(encodeURIComponent(e.object), '&customerNo=').concat(t.customerNo)
+                                          url: '/pages/pos/terRecord/terFaceCheck/terFaceCheck?legalKey='.concat(encodeURIComponent(e.object), '&customerNo=').concat(t.customerNo)
                                       }),
                                       t.queryAgreementSign())
                                     : e.message &&

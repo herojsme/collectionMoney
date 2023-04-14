@@ -112,7 +112,7 @@ export default {
             console.log('账号登录');
             if ('accontLogin' == this.fromAccont) {
                 uni.navigateTo({
-                    url: 'pages/login/idCardLogin/idCardLogin'
+                    url: '/pages/login/idCardLogin/idCardLogin'
                 });
             } else {
                 uni.navigateBack();
@@ -122,7 +122,7 @@ export default {
         clickRegisterAccont: function () {
             console.log('注册');
             uni.navigateTo({
-                url: 'pages/login/accontRegister/accontRegister'
+                url: '/pages/login/accontRegister/accontRegister'
             });
         },
 
@@ -136,7 +136,7 @@ export default {
         clickForget: function () {
             console.log('忘记密码');
             uni.navigateTo({
-                url: 'pages/login/forgetLogPwd/forgetLogPwd'
+                url: '/pages/login/forgetLogPwd/forgetLogPwd'
             });
         },
 

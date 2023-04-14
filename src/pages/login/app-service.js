@@ -2978,7 +2978,7 @@ define(
                               showRegister: getApp().globalData.showRegister
                           })
                         : uni.navigateTo({
-                              url: 'pages/login/accontLogin/accontLogin'
+                              url: '/pages/login/accontLogin/accontLogin'
                           });
             },
             onReady: function () {},
@@ -3656,7 +3656,7 @@ define(
                                             ? e.singleAccontLogin(o.loginSecurityCode, o.username)
                                             : o.bindAccountCount > 1
                                             ? uni.navigateTo({
-                                                  url: 'pages/login/accontSelect/accontSelect'
+                                                  url: '/pages/login/accontSelect/accontSelect'
                                               })
                                             : o.bindAccountCount < 1 &&
                                               uni
@@ -3669,10 +3669,10 @@ define(
                                                   .then(function (o) {
                                                       1 == getApp().globalData.showIdCardLogin
                                                           ? uni.navigateTo({
-                                                                url: 'pages/login/idCardLogin/idCardLogin?code=1'
+                                                                url: '/pages/login/idCardLogin/idCardLogin?code=1'
                                                             })
                                                           : uni.navigateTo({
-                                                                url: 'pages/login/accontLogin/accontLogin'
+                                                                url: '/pages/login/accontLogin/accontLogin'
                                                             });
                                                   });
                                 });
@@ -3680,10 +3680,10 @@ define(
                             console.log('getApp().globalData.showIdCardLogin =', getApp().globalData.showIdCardLogin),
                                 1 == getApp().globalData.showIdCardLogin
                                     ? uni.navigateTo({
-                                          url: 'pages/login/idCardLogin/idCardLogin?code=1'
+                                          url: '/pages/login/idCardLogin/idCardLogin?code=1'
                                       })
                                     : uni.navigateTo({
-                                          url: 'pages/login/accontLogin/accontLogin'
+                                          url: '/pages/login/accontLogin/accontLogin'
                                       });
                     } else
                         uni.showToast({
@@ -3695,7 +3695,7 @@ define(
                 clickAccontLogin: function () {
                     this.isAgree
                         ? uni.navigateTo({
-                              url: 'pages/login/accontLogin/accontLogin?from=accontLogin'
+                              url: '/pages/login/accontLogin/accontLogin?from=accontLogin'
                           })
                         : uni.showToast({
                               title: '请先同意隐私政策和用户协议',
@@ -3788,7 +3788,7 @@ define(
                 getPhoneNumberTest: function (o) {
                     console.log(o.detail),
                         uni.navigateTo({
-                            url: 'pages/login/idCardLogin/idCardLogin?code=1'
+                            url: '/pages/login/idCardLogin/idCardLogin?code=1'
                         });
                 },
 
@@ -3810,7 +3810,7 @@ define(
                               })
                             : this.idCardName
                             ? uni.navigateTo({
-                                  url: 'pages/login/faceLogin/faceLogin?idcard=' + this.idCardnumber + '&idName=' + this.idCardName
+                                  url: '/pages/login/faceLogin/faceLogin?idcard=' + this.idCardnumber + '&idName=' + this.idCardName
                               })
                             : uni.showToast({
                                   title: '请输入姓名',
@@ -3825,14 +3825,14 @@ define(
                 clickAccontLogin: function () {
                     console.log('账号登录'),
                         uni.navigateTo({
-                            url: 'pages/login/accontLogin/accontLogin'
+                            url: '/pages/login/accontLogin/accontLogin'
                         });
                 },
 
                 clickRegisterAccont: function () {
                     console.log('注册'),
                         uni.navigateTo({
-                            url: 'pages/login/accontRegister/accontRegister'
+                            url: '/pages/login/accontRegister/accontRegister'
                         });
                 },
 
@@ -3855,7 +3855,7 @@ define(
                     console.log('账号登录'),
                         'accontLogin' == this.fromAccont
                             ? uni.navigateTo({
-                                  url: 'pages/login/idCardLogin/idCardLogin'
+                                  url: '/pages/login/idCardLogin/idCardLogin'
                               })
                             : uni.navigateBack();
                 },
@@ -3863,7 +3863,7 @@ define(
                 clickRegisterAccont: function () {
                     console.log('注册'),
                         uni.navigateTo({
-                            url: 'pages/login/accontRegister/accontRegister'
+                            url: '/pages/login/accontRegister/accontRegister'
                         });
                 },
 
@@ -3877,7 +3877,7 @@ define(
                 clickForget: function () {
                     console.log('忘记密码'),
                         uni.navigateTo({
-                            url: 'pages/login/forgetLogPwd/forgetLogPwd'
+                            url: '/pages/login/forgetLogPwd/forgetLogPwd'
                         });
                 },
 
@@ -4034,7 +4034,7 @@ define(
                                         JSON.stringify(c);
                                         uni.setStorageSync('accountList', c),
                                             uni.navigateTo({
-                                                url: 'pages/login/accontIdCardSelect/accontIdCardSelect?userCode='.concat(n)
+                                                url: '/pages/login/accontIdCardSelect/accontIdCardSelect?userCode='.concat(n)
                                             });
                                     } else if (1 === c.length) {
                                         var i = c[0].username;
@@ -4046,7 +4046,7 @@ define(
                                             t.getCheckwxrAccountExist();
                                     } else
                                         uni.navigateTo({
-                                            url: 'pages/login/accontRegister/accontRegister'
+                                            url: '/pages/login/accontRegister/accontRegister'
                                         });
                                 } else
                                     uni.showModal({
@@ -4060,7 +4060,7 @@ define(
                                             e.confirm ||
                                                 (e.cancel &&
                                                     uni.navigateTo({
-                                                        url: 'pages/login/accontLogin/accontLogin'
+                                                        url: '/pages/login/accontLogin/accontLogin'
                                                     }));
                                         }
                                     });
@@ -4431,7 +4431,7 @@ define(
                     var a = e.target.dataset.rowtitle;
                     if ('开户行' == a)
                         uni.navigateTo({
-                            url: 'pages/login/accontRegister/bank/bank'
+                            url: '/pages/login/accontRegister/bank/bank'
                         });
                     else if ('开户支行' == a) {
                         if ('' == this.bankCode.length)
@@ -4445,7 +4445,7 @@ define(
                                 icon: 'none'
                             });
                         uni.navigateTo({
-                            url: 'pages/login/accontRegister/alliedBank/alliedBank?bankCode=' + this.bankCode + '&areaCode=' + this.areaCode
+                            url: '/pages/login/accontRegister/alliedBank/alliedBank?bankCode=' + this.bankCode + '&areaCode=' + this.areaCode
                         });
                     } else
                         '开户行所在地' == a
@@ -4463,7 +4463,7 @@ define(
                 onClickHyYtypeRow: function () {
                     '' != this.jyareaDiquCode
                         ? uni.navigateTo({
-                              url: 'pages/login/accontRegister/hangyetype/hangyetype?area=' + this.jyareaDiquCode
+                              url: '/pages/login/accontRegister/hangyetype/hangyetype?area=' + this.jyareaDiquCode
                           })
                         : uni.showToast({
                               title: '请先选择经营地区',
@@ -4932,7 +4932,7 @@ define(
                               delta: 2
                           }))
                         : uni.redirectTo({
-                              url: 'pages/login/idCardLogin/idCardLogin?idCardnumber=' + this.idcardNumber + '&idCardName=' + this.idcardUserName
+                              url: '/pages/login/idCardLogin/idCardLogin?idCardnumber=' + this.idcardNumber + '&idCardName=' + this.idcardUserName
                           });
                 }
             }

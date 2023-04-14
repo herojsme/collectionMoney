@@ -122,7 +122,7 @@ export default {
             console.log('item ', e);
             uni.setStorageSync('addressDetail', e);
             uni.navigateTo({
-                url: 'pages/infoChange/addressFix/addressFixDetail/addressFixDetail'
+                url: '/pages/infoChange/addressFix/addressFixDetail/addressFixDetail'
             });
         },
 
